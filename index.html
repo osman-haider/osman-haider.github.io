@@ -1,779 +1,2003 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="keywords" content="blog, business card, creative, creative portfolio, cv theme, online resume, personal, portfolio, professional cv, responsive portfolio, resume, resume theme, vcard" />
-	<meta name="author" content="willy wonka" />
-    <title>usman-haider</title>
-  <!--favicon-img--> 
-   <link rel="icon" type="image/png" href="images/favicon.png">
-   <!--favicon-img-->
-   <!--main css file should not be removed -->
-    <link rel="stylesheet" href="css/index.css">
-    <!--main css file-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!-- ═══════════════════════════════════════════════
+     PRIMARY SEO META TAGS
+═══════════════════════════════════════════════ -->
+<title>Usman Haider | AI/ML Engineer & Automation Expert | LLM Fine-Tuning, AI Agents, SaaS</title>
+<meta name="description" content="Usman Haider is a Senior AI/ML & Automation Engineer with 5+ years building LLM-powered chatbots, AI calling agents, fine-tuned models, and end-to-end SaaS platforms. 40+ global clients. Available on Fiverr."/>
+<meta name="keywords" content="AI ML engineer, LLM fine-tuning, AI automation, chatbot development, machine learning engineer, AI calling agent, SaaS development, OpenAI GPT fine-tuning, Whisper fine-tuning, RLHF, LangChain, RAG system, computer vision, Django developer, Python developer, Fiverr AI expert, Usman Haider"/>
+<meta name="author" content="Usman Haider"/>
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<meta name="googlebot" content="index, follow"/>
+<link rel="canonical" href="https://usmanhaider.dev/"/>
+
+<!-- ═══════════════════════════════════════════════
+     OPEN GRAPH (Facebook, LinkedIn)
+═══════════════════════════════════════════════ -->
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://usmanhaider.dev/"/>
+<meta property="og:title" content="Usman Haider | AI/ML Engineer & Automation Expert"/>
+<meta property="og:description" content="Senior AI/ML Engineer building LLM agents, fine-tuned models, AI calling systems, and end-to-end SaaS platforms. 5+ years experience. 40+ satisfied clients worldwide."/>
+<meta property="og:image" content="https://usmanhaider.dev/usman-photo.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="Usman Haider — AI/ML & Automation Engineer"/>
+<meta property="og:site_name" content="Usman Haider Portfolio"/>
+<meta property="og:locale" content="en_US"/>
+
+<!-- ═══════════════════════════════════════════════
+     TWITTER / X CARD
+═══════════════════════════════════════════════ -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Usman Haider | AI/ML Engineer & Automation Expert"/>
+<meta name="twitter:description" content="Senior AI/ML Engineer building LLM agents, chatbots, AI calling systems & SaaS platforms. 5+ years, 40+ clients. Hire on Fiverr."/>
+<meta name="twitter:image" content="https://usmanhaider.dev/usman-photo.png"/>
+<meta name="twitter:image:alt" content="Usman Haider — AI/ML Engineer"/>
+<meta name="twitter:creator" content="@usmanhaider"/>
+
+<!-- ═══════════════════════════════════════════════
+     JSON-LD STRUCTURED DATA (Rich Results)
+═══════════════════════════════════════════════ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://usmanhaider.dev/#person",
+      "name": "Usman Haider",
+      "url": "https://usmanhaider.dev",
+      "image": "https://usmanhaider.dev/usman-photo.png",
+      "jobTitle": "AI/ML & Automation Engineer",
+      "description": "Senior AI/ML Engineer with 5+ years building LLM agents, fine-tuned models, AI automation systems, and end-to-end SaaS platforms.",
+      "knowsAbout": [
+        "Artificial Intelligence", "Machine Learning", "LLM Fine-Tuning", "AI Automation",
+        "Natural Language Processing", "Computer Vision", "SaaS Development",
+        "Python", "PyTorch", "LangChain", "OpenAI", "RAG Systems", "RLHF", "Django", "AWS"
+      ],
+      "sameAs": [
+        "https://www.fiverr.com/YOUR_USERNAME",
+        "https://www.linkedin.com/in/usman-haider",
+        "https://github.com/usman-haider"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "AI & Automation Services",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI Automation Solutions"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "LLM Chatbot Development"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI Calling Agents"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "LLM Fine-Tuning"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Machine Learning Models"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "SaaS Development with AI"}}
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "40",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://usmanhaider.dev/#website",
+      "url": "https://usmanhaider.dev",
+      "name": "Usman Haider — AI/ML Engineer Portfolio",
+      "description": "Portfolio and services of Usman Haider, Senior AI/ML & Automation Engineer",
+      "author": {"@id": "https://usmanhaider.dev/#person"},
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://usmanhaider.dev/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://usmanhaider.dev/#webpage",
+      "url": "https://usmanhaider.dev",
+      "name": "Usman Haider | AI/ML Engineer & Automation Expert",
+      "isPartOf": {"@id": "https://usmanhaider.dev/#website"},
+      "about": {"@id": "https://usmanhaider.dev/#person"},
+      "description": "Hire Usman Haider for AI automation, LLM fine-tuning, chatbot development, and SaaS platforms.",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [{"@type": "ListItem","position": 1,"name": "Home","item": "https://usmanhaider.dev"}]
+      }
+    },
+    {
+      "@type": "Review",
+      "reviewBody": "Usman built our entire AI automation pipeline in 6 weeks. What used to take 3 days now runs in under an hour. The ROI was immediate and undeniable.",
+      "reviewRating": {"@type": "Rating","ratingValue": "5","bestRating": "5"},
+      "author": {"@type": "Person","name": "James Carter"},
+      "itemReviewed": {"@type": "Person","name": "Usman Haider"}
+    }
+  ]
+}
+</script>
+
+<!-- ═══════════════════════════════════════════════
+     PERFORMANCE & TECHNICAL SEO
+═══════════════════════════════════════════════ -->
+<meta name="theme-color" content="#03060f"/>
+<meta name="msapplication-TileColor" content="#03060f"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com"/>
+<link rel="dns-prefetch" href="https://www.fiverr.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Cabinet+Grotesk:wght@300;400;500;700;800&display=swap" rel="stylesheet"/>
+<style>
+/* ── DESIGN SYSTEM ─────────────────────────────────────────── */
+:root{
+  --ink:#03060f;
+  --ink2:#060c1a;
+  --gold:#e8c84a;
+  --gold2:#f5d76e;
+  --gold-glow:rgba(232,200,74,0.25);
+  --silver:#c8d6e5;
+  --silver2:#8fa3b8;
+  --ice:#e8f4ff;
+  --plasma:#4fc8ff;
+  --plasma2:#00a8ff;
+  --plasma-glow:rgba(79,200,255,0.2);
+  --fiverr:#1dbf73;
+  --fiverr-glow:rgba(29,191,115,0.3);
+  --glass:rgba(255,255,255,0.03);
+  --glass2:rgba(255,255,255,0.06);
+  --glass3:rgba(255,255,255,0.09);
+  --edge:rgba(255,255,255,0.07);
+  --edge2:rgba(232,200,74,0.2);
+  --fd:'Cabinet Grotesk',sans-serif;
+  --fb:'Cabinet Grotesk',sans-serif;
+  --tx:.4s cubic-bezier(.23,1,.32,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--ink);color:var(--ice);
+  font-family:var(--fb);font-size:16px;line-height:1.6;
+  overflow-x:hidden;cursor:none;
+}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+button{cursor:none;border:none;background:none;font:inherit}
+
+/* ── CUSTOM CURSOR ──────────────────────────────────────────── */
+#cur{
+  position:fixed;z-index:99999;pointer-events:none;
+  width:12px;height:12px;
+  background:var(--gold);border-radius:50%;
+  transform:translate(-50%,-50%);
+  transition:width .2s,height .2s,background .2s;
+  mix-blend-mode:difference;
+}
+#cur-ring{
+  position:fixed;z-index:99998;pointer-events:none;
+  width:44px;height:44px;
+  border:1px solid rgba(232,200,74,0.4);border-radius:50%;
+  transform:translate(-50%,-50%);
+  transition:transform .12s ease,width .3s,height .3s,border-color .3s;
+}
+.hovering #cur{width:20px;height:20px;background:var(--plasma)}
+.hovering #cur-ring{width:64px;height:64px;border-color:rgba(79,200,255,0.5)}
+
+/* ── LOADER ─────────────────────────────────────────────────── */
+#loader{
+  position:fixed;inset:0;z-index:9999;
+  background:var(--ink);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:32px;transition:opacity .8s,visibility .8s;
+}
+#loader.gone{opacity:0;visibility:hidden}
+.ld-title{
+  font-family:var(--fd);font-size:3.5rem;font-weight:700;
+  letter-spacing:-2px;color:var(--gold);
+}
+.ld-progress{
+  width:240px;height:1px;background:var(--edge);position:relative;overflow:hidden;
+}
+.ld-bar{
+  position:absolute;inset:0;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  width:0%;animation:ldBar 2s cubic-bezier(.4,0,.2,1) forwards;
+}
+@keyframes ldBar{to{width:100%}}
+.ld-pct{font-size:.8rem;font-weight:700;color:var(--silver2);letter-spacing:.15em;font-variant-numeric:tabular-nums}
+
+/* ── CANVAS HERO BG ─────────────────────────────────────────── */
+#heroCanvas{
+  position:fixed;inset:0;z-index:-1;
+  pointer-events:none;
+}
+
+/* ── VIGNETTE ───────────────────────────────────────────────── */
+.vignette{
+  position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:radial-gradient(ellipse 120% 80% at 50% 50%, transparent 40%, rgba(3,6,15,.8) 100%);
+}
+
+/* ── NAVBAR ─────────────────────────────────────────────────── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  padding:0 clamp(20px,4vw,60px);
+  height:72px;
+  display:flex;align-items:center;justify-content:space-between;
+  transition:background .4s,border .4s;
+}
+nav.solid{
+  background:rgba(3,6,15,.92);backdrop-filter:blur(24px);
+  border-bottom:1px solid var(--edge);
+}
+.nav-logo{
+  font-family:var(--fd);font-size:1.4rem;font-weight:700;
+  color:var(--gold);letter-spacing:-1px;
+  position:relative;
+}
+.nav-logo::after{
+  content:'';position:absolute;bottom:-2px;left:0;right:0;height:1px;
+  background:var(--gold);transform:scaleX(0);transform-origin:left;
+  transition:transform .3s;
+}
+.nav-logo:hover::after{transform:scaleX(1)}
+.nav-links{display:flex;align-items:center;gap:6px}
+.nav-links a{
+  font-size:.82rem;font-weight:500;letter-spacing:.04em;
+  color:var(--silver2);padding:8px 14px;border-radius:6px;
+  transition:color .2s,background .2s;
+}
+.nav-links a:hover{color:var(--ice);background:var(--glass2)}
+.nav-fv{
+  display:inline-flex !important;align-items:center;gap:6px;
+  background:rgba(29,191,115,0.1) !important;
+  border:1px solid rgba(29,191,115,0.25) !important;
+  color:var(--fiverr) !important;font-weight:600 !important;
+}
+.nav-fv:hover{background:rgba(29,191,115,0.2) !important;}
+.nav-cta{
+  background:linear-gradient(135deg,var(--gold),#c4973a) !important;
+  color:var(--ink) !important;font-weight:700 !important;
+  border-radius:8px !important;padding:9px 20px !important;
+  box-shadow:0 4px 20px var(--gold-glow);
+}
+.nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 32px var(--gold-glow)}
+.ham{display:none;flex-direction:column;gap:5px}
+.ham span{display:block;width:22px;height:1.5px;background:var(--ice);transition:var(--tx)}
+.mob-nav{display:none;position:fixed;inset:0;background:rgba(3,6,15,.98);backdrop-filter:blur(30px);z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:32px}
+.mob-nav.open{display:flex}
+.mob-nav a{font-family:var(--fd);font-size:2.2rem;font-weight:700;color:var(--silver2);transition:color .2s}
+.mob-nav a:hover{color:var(--gold)}
+
+/* ── HERO BASE — layout controlled in responsive block below ─── */
+#hero{
+  min-height:100svh;height:auto;
+  display:flex;align-items:center;
+  padding-top:calc(72px + 40px);
+  padding-bottom:60px;
+  padding-left:clamp(16px,5vw,60px);
+  padding-right:clamp(16px,5vw,60px);
+  position:relative;z-index:1;
+  overflow:visible;
+}
+.hero-inner{
+  max-width:1200px;margin:0 auto;width:100%;
+  display:grid;grid-template-columns:1fr 460px;
+  gap:48px;align-items:center;
+}
+.hero-left{display:flex;flex-direction:column;align-items:flex-start;min-width:0}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:24px;
+  animation:heroIn .8s ease both;
+}
+.eyebrow-dot{
+  width:6px;height:6px;background:var(--gold);border-radius:50%;
+  animation:pulse 2s ease-in-out infinite;
+}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 var(--gold-glow)}50%{box-shadow:0 0 0 8px transparent}}
+@keyframes heroIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+
+h1.hero-h{
+  font-family:var(--fd);
+  /* Reduced from 5.5rem max — readable and elegant, not overwhelming */
+  font-size:clamp(2rem,4vw,3.6rem);
+  font-weight:600;
+  line-height:1.08;
+  letter-spacing:-1.5px;
+  color:var(--ice);
+  margin-bottom:20px;
+  animation:heroIn .9s .1s ease both;
+  /* Lock height to exactly 4 lines so typewriter never shifts layout */
+  min-height:calc(clamp(2rem,4vw,3.6rem) * 1.08 * 4);
+  display:flex;flex-direction:column;justify-content:flex-start;
+}
+.hero-h .line-gold{
+  background:linear-gradient(90deg,var(--gold),var(--gold2));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  display:block;
+}
+.hero-h .line-plasma{
+  background:linear-gradient(90deg,var(--plasma),var(--plasma2));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  display:block;
+}
+.hero-desc{
+  font-size:1.05rem;color:var(--silver2);line-height:1.8;
+  max-width:460px;margin-bottom:40px;
+  animation:heroIn 1s .2s ease both;
+}
+.hero-btns{
+  display:flex;flex-wrap:wrap;gap:14px;margin-bottom:48px;
+  animation:heroIn 1.1s .3s ease both;
+}
+.btn-gold{
+  display:inline-flex;align-items:center;gap:8px;
+  background:linear-gradient(135deg,var(--gold),#c4973a);
+  color:var(--ink);font-weight:800;font-size:.9rem;
+  padding:15px 30px;border-radius:10px;
+  box-shadow:0 4px 24px var(--gold-glow),inset 0 1px 0 rgba(255,255,255,.2);
+  transition:var(--tx);
+}
+.btn-gold:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 12px 40px var(--gold-glow)}
+.btn-ghost{
+  display:inline-flex;align-items:center;gap:8px;
+  border:1px solid var(--edge2);color:var(--silver);
+  font-weight:600;font-size:.9rem;padding:14px 28px;border-radius:10px;
+  background:var(--glass);backdrop-filter:blur(10px);
+  transition:var(--tx);
+}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold);background:rgba(232,200,74,0.05);transform:translateY(-2px)}
+
+/* Fiverr hero pill — defined in responsive section below */
+
+.fvp-icon{width:36px;height:36px;background:var(--fiverr);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 4px 12px var(--fiverr-glow)}
+.fvp-arr{margin-left:auto;color:var(--fiverr);font-size:1rem}
+
+.hero-stats{
+  display:flex;gap:36px;
+  animation:heroIn 1.3s .5s ease both;
+}
+.hstat-val{
+  font-family:var(--fd);font-size:2.2rem;font-weight:700;
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  line-height:1;margin-bottom:4px;
+}
+.hstat-label{font-size:.78rem;color:var(--silver2);font-weight:500;letter-spacing:.03em}
+
+/* ── PYTHON TERMINAL CARD ──────────────────────────────────── */
+.hero-right{
+  perspective:1200px;
+  animation:heroIn 1s .4s ease both;
+  display:flex;align-items:center;justify-content:center;
+  /* Prevent right column from shrinking below card width */
+  min-width:0;
+}
+.py-terminal{
+  /* Fixed dimensions — never squeeze no matter what */
+  width:460px;
+  min-width:460px;
+  max-width:460px;
+  background:#0d1117;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.06),
+    0 24px 60px rgba(0,0,0,.7),
+    0 0 60px rgba(79,200,255,0.07);
+  transition:transform .12s ease;
+  transform-style:preserve-3d;
+  position:relative;
+  /* Ensure it never gets taller than viewport */
+  max-height:calc(100vh - 72px - 60px);
+  overflow-y:auto;
+  scrollbar-width:none;
+}
+.py-terminal::-webkit-scrollbar{display:none}
+/* scanline overlay */
+.py-terminal::after{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.04) 2px,rgba(0,0,0,0.04) 4px);
+  border-radius:16px;
+}
+.py-titlebar{
+  background:#161b22;
+  padding:14px 18px;
+  display:flex;align-items:center;gap:14px;
+  border-bottom:1px solid rgba(255,255,255,0.05);
+}
+.py-dots{display:flex;gap:7px}
+.py-dot{width:13px;height:13px;border-radius:50%}
+.py-dot-r{background:#ff5f56;box-shadow:0 0 8px rgba(255,95,86,.5)}
+.py-dot-y{background:#ffbd2e;box-shadow:0 0 8px rgba(255,189,46,.5)}
+.py-dot-g{background:#27c93f;box-shadow:0 0 8px rgba(39,201,63,.5)}
+.py-filename{
+  font-family:'Courier New',Courier,monospace;
+  font-size:.82rem;color:#8b949e;margin-left:auto;
+  letter-spacing:.02em;
+}
+.py-body{
+  padding:28px 28px 32px;
+  font-family:'Courier New',Courier,monospace;
+  font-size:.92rem;line-height:1.9;
+  color:#e6edf3;
+  background:#0d1117;
+  min-height:340px;
+}
+/* syntax colours matching the screenshot */
+.py-cmt{color:#6e7681;font-style:italic}
+.py-kw{color:#7ce8b0}    /* variable names - green like screenshot */
+.py-op{color:#e6edf3}    /* = sign */
+.py-str{color:#a5d6ff}   /* "string values" - light blue */
+.py-num{color:#f97316}   /* numbers - orange */
+.py-bracket{color:#c9d1d9}
+.py-const{color:#56d4dd} /* OPEN_TO_WORK - cyan */
+.py-indent{padding-left:20px;display:block}
+/* Typing cursor */
+.py-cursor{
+  display:inline-block;width:9px;height:16px;
+  background:#56d4dd;vertical-align:middle;margin-left:2px;
+  animation:blink 1s step-end infinite;
+  border-radius:1px;
+}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+
+/* floating particles inside terminal */
+.py-particle{
+  position:absolute;border-radius:50%;
+  background:rgba(86,212,221,0.6);
+  animation:pyFloat linear infinite;
+  pointer-events:none;
+}
+@keyframes pyFloat{
+  0%{transform:translateY(0) translateX(0);opacity:.8}
+  50%{transform:translateY(-30px) translateX(10px);opacity:.3}
+  100%{transform:translateY(-60px) translateX(-5px);opacity:0}
+}
+
+/* ── ABOUT SECTION ─────────────────────────────────────────── */
+#about-section{
+  position:relative;z-index:1;
+  padding:clamp(60px,8vw,120px) clamp(16px,5vw,60px);
+  max-width:1320px;margin:0 auto;
+}
+.about-grid{
+  display:grid;grid-template-columns:1fr 1.3fr;
+  gap:clamp(32px,6vw,80px);
+  align-items:center;margin-top:48px;
+}
+/* Photo frame */
+.about-photo-wrap{position:relative}
+.about-photo-frame{
+  position:relative;
+  border-radius:24px;overflow:hidden;
+  background:linear-gradient(135deg,#0d1117,#161b22);
+  border:1px solid var(--edge);
+  aspect-ratio:4/5;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 40px 80px rgba(0,0,0,.6),0 0 60px rgba(79,200,255,.06);
+}
+.about-photo-frame img{
+  width:100%;height:100%;object-fit:cover;
+  display:block;border-radius:24px;
+}
+/* glow border animation */
+.about-photo-frame::before{
+  content:'';position:absolute;inset:-1px;border-radius:25px;
+  background:linear-gradient(135deg,rgba(79,200,255,.3),transparent,rgba(232,200,74,.2),transparent);
+  z-index:-1;
+  animation:borderGlow 4s ease-in-out infinite;
+}
+@keyframes borderGlow{0%,100%{opacity:.4}50%{opacity:1}}
+/* floating badges */
+.about-badge{
+  position:absolute;
+  background:rgba(13,17,23,.92);
+  backdrop-filter:blur(20px);
+  border:1px solid var(--edge2);
+  border-radius:12px;padding:10px 16px;
+  font-size:.8rem;font-weight:700;
+  white-space:nowrap;
+  box-shadow:0 8px 32px rgba(0,0,0,.4);
+  z-index:2;
+}
+.ab-exp{bottom:-16px;left:-16px;color:var(--plasma)}
+.ab-proj{top:-16px;right:-16px;color:var(--gold)}
+.about-content .about-lead{
+  font-family:var(--fd);font-size:1.5rem;font-weight:700;
+  line-height:1.25;color:var(--ice);margin-bottom:20px;letter-spacing:-.5px;
+}
+.about-text{font-size:.95rem;color:var(--silver2);line-height:1.85;margin-bottom:16px}
+.about-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.chip{
+  background:var(--glass2);border:1px solid var(--edge);
+  border-radius:8px;padding:6px 14px;
+  font-size:.78rem;font-weight:600;color:var(--silver2);
+  transition:var(--tx);
+}
+.chip:hover{border-color:var(--gold);color:var(--gold);background:rgba(232,200,74,.05)}
+
+/* ── LIVE INTELLIGENCE CARD ────────────────────────────────── */
+.li-card{
+  background:linear-gradient(160deg,#13181f 0%,#0d1117 60%,#111620 100%);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:22px;
+  padding:36px 32px 32px;
+  box-shadow:
+    0 2px 0 rgba(255,255,255,0.05) inset,
+    0 40px 80px rgba(0,0,0,.6),
+    0 0 60px rgba(232,200,74,0.05);
+  position:relative;overflow:hidden;
+  transition:transform .12s ease,box-shadow .12s ease;
+  transform-style:preserve-3d;
+}
+.li-card::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 80% 60% at 80% 20%,rgba(232,200,74,0.06),transparent 60%);
+  pointer-events:none;
+}
+.li-card::after{
+  content:'';position:absolute;inset:0;
+  background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(255,255,255,0.012) 3px,rgba(255,255,255,0.012) 4px);
+  pointer-events:none;border-radius:22px;
+}
+.li-header{margin-bottom:28px}
+.li-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(232,200,74,0.1);
+  border:1px solid rgba(232,200,74,0.22);
+  border-radius:7px;padding:6px 14px;
+  font-size:.7rem;font-weight:800;letter-spacing:.14em;
+  color:var(--gold);margin-bottom:20px;
+}
+.li-dot{
+  width:7px;height:7px;background:var(--gold);border-radius:50%;
+  animation:pulse 2s ease-in-out infinite;
+  box-shadow:0 0 6px var(--gold);
+}
+.li-title{
+  font-family:var(--fd);font-size:1.8rem;font-weight:800;
+  color:var(--ice);letter-spacing:-.5px;margin-bottom:4px;
+  line-height:1.1;
+}
+.li-sub{font-size:.9rem;color:var(--silver2);font-weight:400}
+.li-rows{display:flex;flex-direction:column;gap:10px}
+.li-row{
+  display:flex;align-items:center;gap:14px;
+  background:rgba(255,255,255,0.035);
+  border:1px solid rgba(255,255,255,0.06);
+  border-radius:13px;padding:14px 16px;
+  transition:border-color .25s,background .25s,transform .25s;
+  position:relative;overflow:hidden;
+  cursor:default;
+}
+.li-row::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;width:2px;
+  background:linear-gradient(180deg,var(--gold),var(--gold2));
+  border-radius:2px;opacity:0;transition:opacity .25s;
+}
+.li-row:hover{
+  border-color:rgba(232,200,74,0.2);
+  background:rgba(232,200,74,0.04);
+  transform:translateX(5px);
+}
+.li-row:hover::before{opacity:1}
+.li-icon{
+  width:38px;height:38px;border-radius:9px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.1rem;flex-shrink:0;
+}
+.li-label{
+  font-size:.9rem;font-weight:700;color:var(--ice);flex:1;
+  letter-spacing:-.1px;
+}
+.li-bar-wrap{
+  width:100px;height:3px;
+  background:rgba(255,255,255,0.08);
+  border-radius:3px;overflow:hidden;flex-shrink:0;
+}
+.li-bar{
+  height:100%;background:linear-gradient(90deg,var(--gold),var(--gold2));
+  border-radius:3px;width:0%;
+  transition:width 1.4s cubic-bezier(.4,0,.2,1);
+}
+.li-pct{
+  font-size:.85rem;font-weight:800;color:var(--gold);
+  min-width:38px;text-align:right;font-variant-numeric:tabular-nums;
+  letter-spacing:.02em;
+}
+
+/* ── SECTION BASE ─────────────────────────────────────────── */
+.section{
+  position:relative;z-index:1;
+  padding:clamp(60px,8vw,120px) clamp(16px,5vw,60px);
+  max-width:1320px;margin:0 auto;
+}
+.s-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:.7rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:16px;
+}
+.s-eyebrow::before{content:'';display:block;width:24px;height:1px;background:var(--gold)}
+h2.s-title{
+  font-family:var(--fd);font-size:clamp(2.2rem,4.5vw,3.8rem);
+  font-weight:700;letter-spacing:-2px;line-height:1.0;
+  color:var(--ice);margin-bottom:20px;
+}
+.s-sub{font-size:1rem;color:var(--silver2);max-width:520px;line-height:1.8}
+.reveal{opacity:0;transform:translateY(40px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:translateY(0)}
+.reveal-d1{transition-delay:.1s}.reveal-d2{transition-delay:.18s}.reveal-d3{transition-delay:.26s}.reveal-d4{transition-delay:.34s}
+
+/* ── DIVIDER ─────────────────────────────────────────────── */
+.divider{
+  height:1px;max-width:1320px;margin:0 auto;
+  background:linear-gradient(90deg,transparent,var(--edge),transparent);
+}
+
+/* ── FIVERR BAND ─────────────────────────────────────────── */
+.fv-band{
+  padding:0 clamp(20px,5vw,60px);
+  background:linear-gradient(90deg,rgba(29,191,115,0.05),rgba(29,191,115,0.02),rgba(29,191,115,0.05));
+  border-top:1px solid rgba(29,191,115,0.12);
+  border-bottom:1px solid rgba(29,191,115,0.12);
+}
+.fv-band-inner{
+  max-width:1320px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;gap:28px;
+  flex-wrap:wrap;padding:40px 0;
+}
+.fvb-left{display:flex;align-items:center;gap:18px}
+.fvb-logo{
+  width:56px;height:56px;background:var(--fiverr);border-radius:14px;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 28px var(--fiverr-glow);flex-shrink:0;
+}
+.fvb-title{font-family:var(--fd);font-size:1.2rem;font-weight:700;margin-bottom:4px}
+.fvb-sub{font-size:.85rem;color:var(--silver2)}
+.fvb-sub em{color:var(--fiverr);font-style:normal;font-weight:600}
+.fvb-right{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.fvb-chip{background:rgba(29,191,115,0.08);border:1px solid rgba(29,191,115,0.18);border-radius:8px;padding:6px 14px;font-size:.78rem;font-weight:700;color:var(--fiverr)}
+.btn-fv{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--fiverr);color:#fff;font-weight:700;font-size:.9rem;
+  padding:13px 26px;border-radius:10px;transition:var(--tx);
+  box-shadow:0 4px 20px var(--fiverr-glow);
+}
+.btn-fv:hover{transform:translateY(-2px);box-shadow:0 10px 36px var(--fiverr-glow)}
+
+/* ── SERVICES 3D GRID ─────────────────────────────────────── */
+.sv-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:60px;
+}
+.sv-card{
+  position:relative;perspective:800px;
+  border-radius:20px;overflow:visible;
+}
+.sv-card-inner{
+  background:var(--glass2);
+  border:1px solid var(--edge);
+  border-radius:20px;padding:36px;
+  position:relative;overflow:hidden;
+  transition:transform .4s var(--tx),border-color .3s,box-shadow .4s;
+  transform-style:preserve-3d;
+}
+.sv-card:hover .sv-card-inner{
+  border-color:rgba(232,200,74,0.3);
+  box-shadow:0 24px 60px rgba(0,0,0,.5),0 0 40px rgba(232,200,74,0.08);
+}
+.sv-card-inner::before{
+  content:'';position:absolute;inset:0;border-radius:20px;
+  background:linear-gradient(135deg,rgba(232,200,74,0.04),transparent 50%);
+  opacity:0;transition:opacity .3s;
+}
+.sv-card:hover .sv-card-inner::before{opacity:1}
+.sv-num{
+  position:absolute;top:24px;right:24px;
+  font-family:var(--fd);font-size:3.5rem;font-weight:700;
+  color:var(--ice);opacity:.04;line-height:1;
+}
+.sv-icon-wrap{
+  width:56px;height:56px;border-radius:14px;
+  display:flex;align-items:center;justify-content:center;font-size:1.6rem;
+  margin-bottom:22px;border:1px solid var(--edge);
+  background:var(--glass);
+  transition:transform .3s,box-shadow .3s;
+  transform-style:preserve-3d;
+}
+.sv-card:hover .sv-icon-wrap{transform:translateZ(20px) rotateY(-5deg);box-shadow:0 8px 32px var(--gold-glow)}
+.sv-card h3{font-family:var(--fd);font-size:1.15rem;font-weight:700;color:var(--ice);margin-bottom:12px;letter-spacing:-.3px}
+.sv-card p{font-size:.875rem;color:var(--silver2);line-height:1.75}
+.sv-arrow{
+  display:inline-flex;align-items:center;gap:6px;
+  margin-top:20px;font-size:.8rem;font-weight:700;
+  color:var(--gold);letter-spacing:.05em;
+  opacity:0;transform:translateX(-8px);
+  transition:opacity .3s,transform .3s;
+}
+.sv-card:hover .sv-arrow{opacity:1;transform:translateX(0)}
+
+/* View All */
+.view-all-row{display:flex;justify-content:center;margin-top:48px}
+.btn-viewall{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:.85rem;font-weight:700;letter-spacing:.04em;
+  color:var(--silver);border:1px solid var(--edge2);
+  background:var(--glass);backdrop-filter:blur(10px);
+  padding:13px 28px;border-radius:50px;
+  transition:var(--tx);
+}
+.btn-viewall:hover{border-color:var(--gold);color:var(--gold);background:rgba(232,200,74,0.05);transform:translateY(-2px)}
+.btn-viewall .arr{transition:transform .2s}
+.btn-viewall:hover .arr{transform:translateX(5px)}
+
+/* ── PROJECTS 3D ──────────────────────────────────────────── */
+.pr-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:60px;
+}
+.pr-card{
+  border-radius:20px;overflow:hidden;
+  background:var(--glass);border:1px solid var(--edge);
+  transition:transform .4s var(--tx),box-shadow .4s,border-color .3s;
+  transform-style:preserve-3d;perspective:800px;
+  display:flex;flex-direction:column;
+}
+.pr-card:hover{
+  transform:translateY(-8px) rotateX(2deg);
+  border-color:rgba(79,200,255,0.3);
+  box-shadow:0 32px 80px rgba(0,0,0,.5),0 0 60px rgba(79,200,255,0.08);
+}
+.pr-card-head{
+  height:180px;position:relative;overflow:hidden;
+  display:flex;align-items:center;justify-content:center;
+}
+.pr-card-head::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(to bottom,transparent 40%,var(--ink) 100%);
+}
+.pr-big-num{
+  font-family:var(--fd);font-size:8rem;font-weight:700;
+  opacity:.06;position:absolute;bottom:-10px;right:10px;line-height:1;
+  color:var(--ice);
+}
+.pr-card-icon{font-size:3rem;position:relative;z-index:1;
+  transition:transform .4s;transform-style:preserve-3d;}
+.pr-card:hover .pr-card-icon{transform:translateZ(30px) scale(1.1)}
+.pr-card-body{padding:24px;flex:1;display:flex;flex-direction:column}
+.pr-card h3{font-family:var(--fd);font-size:1.05rem;font-weight:700;color:var(--ice);margin-bottom:10px;letter-spacing:-.2px}
+.pr-card p{font-size:.85rem;color:var(--silver2);line-height:1.75;flex:1}
+.pr-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.pr-tag{
+  background:rgba(79,200,255,0.08);
+  border:1px solid rgba(79,200,255,0.15);
+  border-radius:6px;padding:3px 10px;
+  font-size:.7rem;font-weight:700;color:var(--plasma);
+}
+
+/* ── TESTIMONIALS ─────────────────────────────────────────── */
+.testi-stage{
+  position:relative;margin-top:60px;overflow:hidden;
+}
+.testi-track{display:flex;gap:24px;transition:transform .7s cubic-bezier(.23,1,.32,1)}
+.t-card{
+  min-width:400px;flex-shrink:0;
+  background:var(--glass2);border:1px solid var(--edge);
+  border-radius:20px;padding:36px;
+  position:relative;overflow:hidden;
+  transition:border-color .3s,box-shadow .3s,transform .3s;
+}
+.t-card.active-t{
+  border-color:rgba(232,200,74,0.3);
+  box-shadow:0 0 60px rgba(232,200,74,0.06);
+}
+.t-card::before{
+  content:'❝';position:absolute;top:16px;right:20px;
+  font-size:5rem;color:var(--gold);opacity:.06;line-height:1;
+  font-family:serif;
+}
+.t-stars{display:flex;gap:4px;margin-bottom:16px}
+.t-star{color:var(--gold);font-size:1rem}
+.t-text{font-size:.92rem;color:var(--silver);line-height:1.8;font-style:italic;margin-bottom:24px}
+.t-author{display:flex;align-items:center;gap:12px}
+.t-av{
+  width:46px;height:46px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--fd);font-weight:700;font-size:1.05rem;color:var(--ink);
+  flex-shrink:0;
+}
+.t-name{font-weight:700;font-size:.9rem;color:var(--ice);margin-bottom:2px}
+.t-role{font-size:.78rem;color:var(--silver2)}
+.t-ctrl{display:flex;align-items:center;gap:12px;margin-top:28px}
+.t-btn{
+  width:44px;height:44px;border-radius:50%;
+  background:var(--glass2);border:1px solid var(--edge);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--silver2);font-size:1.1rem;cursor:none;
+  transition:border-color .2s,color .2s;
+}
+.t-btn:hover{border-color:var(--gold);color:var(--gold)}
+.t-dots{display:flex;gap:6px}
+.t-dot{
+  width:8px;height:8px;border-radius:50%;
+  background:var(--edge);cursor:none;transition:var(--tx);
+}
+.t-dot.on{background:var(--gold);width:24px;border-radius:4px}
+
+/* ── CONTACT ─────────────────────────────────────────────── */
+#contact{background:linear-gradient(180deg,transparent,var(--ink2) 30%,var(--ink2))}
+.contact-section{
+  position:relative;z-index:1;
+  padding:clamp(60px,8vw,120px) clamp(16px,5vw,60px);
+  max-width:1320px;margin:0 auto;
+}
+.contact-grid{
+  display:grid;grid-template-columns:1fr 1.5fr;
+  gap:clamp(32px,6vw,80px);
+  margin-top:60px;align-items:start;
+}
+.c-info-item{
+  display:flex;gap:16px;align-items:flex-start;margin-bottom:24px;
+}
+.c-icon{
+  width:44px;height:44px;border-radius:10px;
+  background:var(--glass2);border:1px solid var(--edge);
+  display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;
+}
+.c-label{font-size:.72rem;font-weight:800;color:var(--silver2);text-transform:uppercase;letter-spacing:.1em;margin-bottom:3px}
+.c-val{font-size:.9rem;color:var(--ice)}
+
+/* Fiverr hire card */
+.fv-hire-card{
+  display:flex;align-items:center;gap:16px;
+  background:rgba(29,191,115,0.05);border:1px solid rgba(29,191,115,0.18);
+  border-radius:16px;padding:18px;margin:24px 0;
+  text-decoration:none;transition:var(--tx);
+}
+.fv-hire-card:hover{
+  background:rgba(29,191,115,0.1);border-color:rgba(29,191,115,0.4);
+  transform:translateY(-2px);box-shadow:0 8px 32px var(--fiverr-glow);
+}
+.fvh-icon{
+  width:48px;height:48px;background:var(--fiverr);border-radius:12px;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  box-shadow:0 4px 16px var(--fiverr-glow);
+}
+.fvh-t1{font-size:.66rem;font-weight:800;color:var(--fiverr);text-transform:uppercase;letter-spacing:.1em;margin-bottom:3px}
+.fvh-t2{font-size:.92rem;font-weight:700;color:var(--ice)}
+.fvh-t3{font-size:.75rem;color:var(--silver2);margin-top:2px}
+.fvh-arr{margin-left:auto;color:var(--fiverr)}
+
+.socials{display:flex;gap:8px;margin-top:20px}
+.soc-btn{
+  width:42px;height:42px;border-radius:10px;
+  background:var(--glass2);border:1px solid var(--edge);
+  display:flex;align-items:center;justify-content:center;color:var(--silver2);
+  transition:var(--tx);
+}
+.soc-btn:hover{border-color:var(--gold);color:var(--gold);background:rgba(232,200,74,0.05);transform:translateY(-3px);box-shadow:0 8px 20px var(--gold-glow)}
+.soc-btn.soc-fv:hover{border-color:var(--fiverr);color:var(--fiverr);background:rgba(29,191,115,0.05);box-shadow:0 8px 20px var(--fiverr-glow)}
+
+.contact-form{
+  background:var(--glass2);border:1px solid var(--edge);
+  border-radius:16px;padding:24px;backdrop-filter:blur(20px);
+  box-shadow:0 16px 40px rgba(0,0,0,.3);
+}
+.f-group{margin-bottom:14px}
+.f-label{display:block;font-size:.78rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--silver2);margin-bottom:8px}
+.f-input,.f-textarea{
+  width:100%;background:rgba(255,255,255,0.03);
+  border:1px solid var(--edge);border-radius:10px;
+  padding:13px 16px;font-family:var(--fb);font-size:.9rem;color:var(--ice);
+  outline:none;transition:border-color .2s,box-shadow .2s;resize:none;
+}
+.f-input::placeholder,.f-textarea::placeholder{color:var(--silver2)}
+.f-input:focus,.f-textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(232,200,74,0.08);background:rgba(232,200,74,0.02)}
+.f-textarea{min-height:60px}
+.f-submit{
+  width:100%;background:linear-gradient(135deg,var(--gold),#c4973a);
+  color:var(--ink);font-weight:800;font-size:.95rem;
+  padding:16px;border-radius:11px;cursor:none;transition:var(--tx);
+  box-shadow:0 4px 24px var(--gold-glow);
+  font-family:var(--fb);letter-spacing:.02em;
+}
+.f-submit:hover{transform:translateY(-2px);box-shadow:0 10px 36px var(--gold-glow)}
+.f-ok{display:none;text-align:center;padding:16px;color:#86efac;font-weight:700;font-size:.9rem}
+
+/* ── FOOTER ──────────────────────────────────────────────── */
+footer{
+  background:var(--ink2);border-top:1px solid var(--edge);
+  padding:36px clamp(20px,5vw,60px);
+}
+.foot-inner{
+  max-width:1320px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
+}
+.foot-logo{font-family:var(--fd);font-size:1.1rem;font-weight:700;color:var(--gold)}
+.foot-copy{font-size:.8rem;color:var(--silver2)}
+.foot-fv{display:inline-flex;align-items:center;gap:6px;font-size:.8rem;font-weight:700;color:var(--fiverr);transition:opacity .2s}
+.foot-fv:hover{opacity:.75}
+
+/* ══════════════════════════════════════════════════════
+   FULLY RESPONSIVE SYSTEM
+   Breakpoints: 1200 | 1024 | 768 | 480 | 360
+══════════════════════════════════════════════════════ */
+
+/* ── FV HERO PILL: always full width on small screens ── */
+.fv-hero-pill{
+  display:flex;align-items:center;gap:12px;
+  width:100%;max-width:440px;
+  background:rgba(29,191,115,0.06);
+  border:1px solid rgba(29,191,115,0.2);
+  border-radius:12px;padding:12px 16px;
+  text-decoration:none;transition:var(--tx);
+  animation:heroIn 1.2s .4s ease both;
+  box-sizing:border-box;
+}
+.fv-hero-pill:hover{background:rgba(29,191,115,0.12);border-color:rgba(29,191,115,0.4);transform:translateY(-2px);box-shadow:0 8px 32px var(--fiverr-glow)}
+.fvp-text{min-width:0;flex:1;overflow:hidden}
+.fvp-text .t1{font-size:.62rem;font-weight:800;color:var(--fiverr);text-transform:uppercase;letter-spacing:.1em;margin-bottom:2px}
+.fvp-text .t2{font-size:.82rem;font-weight:600;color:var(--ice);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* ── HERO STATS: always wrap on tiny screens ── */
+.hero-stats{
+  display:flex;flex-wrap:wrap;gap:24px 36px;
+  animation:heroIn 1.3s .5s ease both;
+  margin-bottom:24px;
+}
+
+/* ── PY TERMINAL: fixed on desktop, fluid on mobile ── */
+.hero-right{
+  perspective:1200px;
+  animation:heroIn 1s .4s ease both;
+  display:flex;align-items:center;justify-content:center;
+  min-width:0;
+}
+.py-terminal{
+  width:100%;
+  min-width:0;
+  max-width:460px;
+  background:#0d1117;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 0 0 1px rgba(255,255,255,.06),0 24px 60px rgba(0,0,0,.7),0 0 60px rgba(79,200,255,.07);
+  transition:transform .12s ease;
+  transform-style:preserve-3d;
+  position:relative;
+}
+
+/* ── NAV: always proper on all sizes ── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  padding:0 clamp(16px,4vw,60px);
+  height:72px;
+  display:flex;align-items:center;justify-content:space-between;
+  transition:background .4s,border .4s;
+}
+
+/* ── FLOATING FIVERR BADGE: visible always, compact on mobile ── */
+.fv-float{
+  position:fixed;right:16px;bottom:80px;z-index:500;
+  display:flex;align-items:center;gap:8px;
+  background:var(--fiverr);border-radius:50px;
+  padding:9px 16px 9px 9px;
+  box-shadow:0 8px 32px var(--fiverr-glow);
+  text-decoration:none;transition:var(--tx);
+  animation:fvPulse 3s ease-in-out infinite;
+  max-width:calc(100vw - 32px); /* never overflow screen */
+}
+.fv-float:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 16px 48px var(--fiverr-glow)}
+.fvfl-icon{width:28px;height:28px;background:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.fvfl-text{line-height:1.2;min-width:0}
+.fvfl-l1{font-size:.58rem;font-weight:800;color:rgba(255,255,255,.8);text-transform:uppercase;letter-spacing:.1em}
+.fvfl-l2{font-family:var(--fd);font-size:.78rem;font-weight:700;color:#fff;white-space:nowrap}
+
+/* ── SCROLL-TOP BTN: above fiverr float ── */
+#stBtn{
+  position:fixed;bottom:16px;right:16px;z-index:900;
+  width:48px;height:48px;
+  background:transparent;
+  border:1.5px solid rgba(232,200,74,0.5);
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer !important;
+  color:var(--gold);
+  opacity:0;visibility:hidden;
+  transform:translateY(10px);
+  transition:opacity .3s,visibility .3s,transform .3s,background .25s,border-color .25s,box-shadow .25s;
+  box-shadow:0 0 20px rgba(232,200,74,.15);
+}
+#stBtn.on{opacity:1;visibility:visible;transform:translateY(0)}
+#stBtn:hover{background:rgba(232,200,74,.1);border-color:var(--gold);box-shadow:0 0 32px rgba(232,200,74,.35);transform:translateY(-3px) scale(1.08)}
+#stBtn svg{pointer-events:none}
+
+/* ── FIVERR BAND ── */
+.fv-band{padding:0 clamp(16px,5vw,60px);background:linear-gradient(90deg,rgba(29,191,115,.05),rgba(29,191,115,.02),rgba(29,191,115,.05));border-top:1px solid rgba(29,191,115,.12);border-bottom:1px solid rgba(29,191,115,.12)}
+.fv-band-inner{max-width:1320px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:32px 0}
+
+/* ══════════════
+   ≤ 1200px
+══════════════ */
+@media(max-width:1200px){
+  .hero-inner{grid-template-columns:1fr 420px;gap:40px}
+}
+
+/* ══════════════
+   ≤ 1024px
+══════════════ */
+@media(max-width:1024px){
+  .hero-inner{grid-template-columns:1fr 1fr;gap:32px}
+  .py-terminal{max-width:100%}
+  .py-body{font-size:.8rem;padding:20px 22px}
+  .sv-grid{grid-template-columns:1fr 1fr}
+  .pr-grid{grid-template-columns:1fr 1fr}
+  .contact-grid{gap:48px}
+  .about-grid{gap:48px}
+}
+
+/* ══════════════
+   ≤ 768px  (tablet / large mobile)
+══════════════ */
+@media(max-width:768px){
+  /* Hero goes single column, terminal on top */
+  .hero-inner{
+    grid-template-columns:1fr;
+    gap:28px;
+  }
+  .hero-right{order:-1}  /* terminal above text */
+  .py-terminal{max-width:100%;width:100%}
+  .py-body{font-size:.8rem;line-height:1.75;padding:18px 20px}
+
+  h1.hero-h{
+    font-size:clamp(1.75rem,6vw,2.6rem);
+    letter-spacing:-1px;
+  }
+  .hero-desc{font-size:.95rem}
+  .hero-btns{gap:10px}
+  .btn-gold{padding:13px 22px;font-size:.85rem}
+  .btn-ghost{padding:12px 20px;font-size:.85rem}
+  .fv-hero-pill{max-width:100%}
+
+  /* Nav */
+  .nav-links{display:none}
+  .ham{display:flex}
+
+  /* Sections */
+  .sv-grid{grid-template-columns:1fr}
+  .pr-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr;gap:32px}
+  .about-grid{grid-template-columns:1fr;gap:32px}
+  .about-photo-frame{max-height:320px;aspect-ratio:auto}
+  h2.s-title{font-size:clamp(1.6rem,5vw,2.4rem);letter-spacing:-1px}
+
+  /* Testimonials */
+  .t-card{min-width:calc(100vw - 64px)}
+
+  /* Fiverr band */
+  .fv-band-inner{flex-direction:column;align-items:flex-start;gap:16px;padding:24px 0}
+  .fvb-right{flex-wrap:wrap;gap:8px}
+
+  /* Footer */
+  .foot-inner{flex-direction:column;text-align:center;gap:12px}
+}
+
+/* ══════════════
+   ≤ 480px  (phone)
+══════════════ */
+@media(max-width:480px){
+  #hero{
+    padding-top:calc(72px + 20px);
+    padding-bottom:40px;
+    padding-left:16px;
+    padding-right:16px;
+  }
+  h1.hero-h{font-size:clamp(1.6rem,8vw,2.2rem);letter-spacing:-.5px}
+  .hero-stats{gap:16px 24px}
+  .hstat-val{font-size:1.8rem}
+
+  /* Terminal compact */
+  .py-body{font-size:.72rem;line-height:1.65;padding:14px 16px;min-height:auto}
+  .py-titlebar{padding:10px 14px}
+  .py-dot{width:10px;height:10px}
+  .py-filename{font-size:.7rem}
+
+  /* Fiverr float: icon-only on very small screens */
+  .fvfl-text{display:none}
+  .fv-float{padding:10px;border-radius:50%;bottom:76px;right:14px}
+  .fvfl-icon{width:32px;height:32px}
+
+  /* Scroll btn */
+  #stBtn{bottom:14px;right:14px;width:44px;height:44px}
+
+  /* Sections */
+  .section{padding:60px 16px}
+  .contact-section{padding:60px 16px}
+  #about-section{padding:60px 16px}
+  h2.s-title{font-size:1.6rem}
+  .s-sub{font-size:.9rem}
+
+  /* Cards */
+  .sv-card-inner{padding:24px}
+  .pr-card-body{padding:18px}
+  .t-card{padding:24px;min-width:calc(100vw - 32px)}
+
+  /* LI card */
+  .li-card{padding:24px 20px 20px}
+  .li-title{font-size:1.4rem}
+  .li-bar-wrap{width:70px}
+
+  /* About */
+  .about-badge{font-size:.7rem;padding:8px 12px}
+  .ab-exp{bottom:-10px;left:-8px}
+  .ab-proj{top:-10px;right:-8px}
+
+  /* Contact form */
+  .contact-form{padding:24px 20px}
+
+  /* Nav mobile */
+  .mob-nav a{font-size:1.75rem}
+
+  /* FV band */
+  .fvb-chip{font-size:.72rem;padding:5px 10px}
+  .btn-fv{padding:11px 18px;font-size:.85rem}
+}
+
+/* ══════════════
+   ≤ 360px  (small phone)
+══════════════ */
+@media(max-width:360px){
+  h1.hero-h{font-size:1.5rem}
+  .hstat-val{font-size:1.6rem}
+  .btn-gold,.btn-ghost{padding:11px 16px;font-size:.82rem}
+  .py-body{font-size:.65rem}
+  .li-bar-wrap{width:50px}
+  .li-pct{min-width:30px;font-size:.78rem}
+}
+
+/* ── TYPEWRITER ──────────────────────────────────────────── */
+#typeTarget{
+  display:block;
+  min-height:calc(1.08em * 4);
+  flex-shrink:0;
+}
+#typeTarget div{
+  line-height:1.08;
+  min-height:1.08em;
+}
+.type-cursor{
+  display:inline-block;
+  width:2.5px;
+  height:clamp(1.8rem,3.5vw,3rem);
+  background:var(--gold);
+  margin-left:3px;
+  vertical-align:top;
+  margin-top:3px;
+  animation:tcBlink .75s step-end infinite;
+  border-radius:2px;
+  position:relative;
+  pointer-events:none;
+}
+@keyframes tcBlink{0%,100%{opacity:1}50%{opacity:0}}
+/* highlight spans injected by typewriter */
+.tw-gold{background:linear-gradient(90deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.tw-plasma{background:linear-gradient(90deg,var(--plasma),var(--plasma2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.tw-plain{color:var(--ice)}
+
+/* ── SCROLL TOP BUTTON FIX ──────────────────────────────── */
+#stBtn{
+  position:fixed;bottom:28px;right:20px;z-index:900;
+  width:54px;height:54px;
+  background:transparent;
+  border:1.5px solid rgba(232,200,74,0.5);
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer !important;
+  color:var(--gold);
+  font-size:1.1rem;
+  opacity:0;visibility:hidden;
+  transform:translateY(10px);
+  transition:opacity .3s,visibility .3s,transform .3s,background .25s,border-color .25s,box-shadow .25s;
+  box-shadow:0 0 20px rgba(232,200,74,0.15);
+}
+#stBtn.on{opacity:1;visibility:visible;transform:translateY(0)}
+#stBtn:hover{
+  background:rgba(232,200,74,0.1);
+  border-color:var(--gold);
+  box-shadow:0 0 32px rgba(232,200,74,0.35);
+  transform:translateY(-3px) scale(1.08);
+}
+#stBtn svg{pointer-events:none}
+
+/* ── GRID BG LINES ─────────────────────────────────────── */
+.grid-lines{
+  position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;opacity:0.03;
+}
+.grid-lines::before{
+  content:'';position:absolute;inset:-50%;
+  background-image:
+    linear-gradient(var(--ice) 1px,transparent 1px),
+    linear-gradient(90deg,var(--ice) 1px,transparent 1px);
+  background-size:100px 100px;
+  transform:perspective(600px) rotateX(55deg) translateY(-30%) scale(2.5);
+}
+
+/* ── FLOATING ORBS ────────────────────────────────────── */
+.orbs{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.orb{position:absolute;border-radius:50%;filter:blur(100px);opacity:.15;animation:orbFloat 12s ease-in-out infinite}
+.orb1{width:600px;height:600px;background:var(--gold);top:-200px;right:-200px;animation-delay:0s}
+.orb2{width:500px;height:500px;background:var(--plasma);bottom:-200px;left:-100px;animation-delay:4s}
+.orb3{width:350px;height:350px;background:rgba(167,139,250,0.6);top:40%;right:20%;animation-delay:8s}
+@keyframes orbFloat{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(30px,-40px) scale(1.05)}66%{transform:translate(-20px,25px) scale(.95)}}
+</style>
 </head>
 <body>
-    <!--contains all the div-->
-    <div id="all">
-    <!--mouse  follower-->
-        <div class="cursor"></div>
-    <!--mouse  follower-->
-    <!--loader-->
-        <div id="loader">
-            <span class="color">LOADING</span>.....
-        </div>
-    <!--loader-end-->
-    <!--link-screen-->
-        <div id="breaker">
-        </div>
-        <div id="breaker-two">
-        </div>
-    <!--link-screen-->
-        <!--Main-Section-->
-        <!--Navigator-fullscreen-->
-        <div id="navigation-content">
-            <div class="logo">
 
-                <img src="images/willy wonka logo.png" alt="logo">
-                
-            </div>
-            <div class="navigation-close">
-                <span class="close-first"></span>
-                <span class="close-second"></span>
-            </div>
-            <div class="navigation-links">
-                <a href="#" data-text="HOME" id="home-link" >HOME</a>
-                <a href="#" data-text="ABOUT" id="about-link" >ABOUT</a>
-                <a href="#" data-text="BLOG" id="blog-link" >BLOG</a>
-                <a href="#" data-text="PORTFOLIO" id="portfolio-link" >PORTFOLIO</a>
-                <a href="#" data-text="CONTACT" id="contact-link" >CONTACT</a>
-            </div>
-        </div>
-        <!--Navigator-Fullscreen END-->
-          <!--Home Page-->
-        <!--Menubar-->
-        <div id="navigation-bar">
-            <a href="index.html"> <!-- Replace "index.html" with your homepage URL if different -->
-                <img src="images/willy wonka logo.png" alt="logo">
-            </a>
-            <div class="menubar">
-                <span class="first-span"></span>
-                <span class="second-span"></span>
-                <span class="third-span"></span>
-            </div>
-        </div>
-        <!--Menubar End-->
-          <!--Header-->
-        <div id="header">
-            <div id="particles"></div>
-              <!--Social Media Links-->
-            <div class="social-media-links">
-                <a href="https://github.com/osman-haider/"><img src="images/icons8-github-100.png" class="social-media" alt="facebook-logo"></a>
-                <a href="https://www.linkedin.com/in/m-usman-haider/"><img src="images/linkedin logo.png" class="social-media" alt="linkedin-logo"></a>
-                <a href="https://medium.com/@usman-haider"><img src="images/icons8-medium-144.png" class="social-media" alt="twitter-logo"></a>
-                <a href="https://x.com/its_osman2"><img src="images/twitter logo.png" class="social-media" alt="twitter-logo"></a>
-                
-                <!-- <a href="https://www.instagram.com/itsusman_haider/"><img src="images/instagram logo.png" class="social-media" alt="instagram-logo"></a> -->
+<!-- BG LAYERS -->
+<div class="grid-lines"></div>
+<div class="orbs"><div class="orb orb1"></div><div class="orb orb2"></div><div class="orb orb3"></div></div>
+<div class="vignette"></div>
+<canvas id="heroCanvas"></canvas>
 
-            </div>
-            <!--Social Media Links end-->
-            <div class="header-content">
-                <div class="header-content-box">
-                <div class="firstline"><span class="color">Usman </span>Haider</div>
-                <div class="secondline">
-                I'm a
-            <span class="txt-rotate color" data-period="1200"data-rotate='[ " Data Scientist.", " Software Engineer.", " Freelancer." ]'></span>
-            <span class="slash">|</span>
-        </div>
-                    <div class="contact">
-                <a href="Mailto:osmanhaider176@gmail.com"><img src="images/mail.png" alt="email-pic" class="contactpic"></a><!--Your email Id write in place of "#"-->
-                <a href="Tel:+923041581788"><img src="images/call.png" alt="phone-pic" class="contactpic"></a><!--Your telephone number Id write in place of "#"-->
-                    </div>    
-            </div>
-            </div>
-            <!--header image-->
-            <div class="header-image">
-            <img src="images/man.png" alt="logo">
-            </div>
-            <!--header image end-->
-        </div>
-           <!--Header End-->
-        <!--HomePage End-->
-        <!--Main-Section End-->
-        <!--about-->
-        <div id="about">
-            <div class="color-changer">
-            <div class="color-panel">
-                <img src="images/gear.png" alt="">
-            </div>
-            <div class="color-selector">
-                <div class="heading">Custom Colors</div>
-                <div class="colors">
-                    <ul >
-                    <li>
-                        <a href="#0" class="color-red " title="color-red"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-purple" title="color-purple"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-malt" title="color-malt"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-green" title="color-green"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-blue" title="color-blue"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-orange" title="color-orange"></a>
-                    </li>
-                    </ul>
-                </div>
-            </div>
-            </div>
-            <!--about content-->
-            <div id="about-content">
-                <div class="about-header">
-                    About <span class="color">Me</span>
-                    <span class ="header-caption">Get to Know <span class="color"> me.</span></span>
-                </div>
-                <div class="about-main">
-            <div class="about-first-paragraph wow">
-            <!--about description-->
-            <span class="about-first-line">
-                I'm an innovative 
-                <span class="color">AI/ML Engineer</span>
-                based in Lahore, Pakistan
-            </span>
-            <br>
-            <span class="about-second-line">
-                I design and build intelligent systems — from ML/DL models to text and voice-based AI agents, and fine-tuned LLMs. With 2+ years of hands-on experience, I love turning ideas into smart, scalable solutions that push the limits of what AI can do.
-            </span>
+<!-- CURSOR -->
+<div id="cur"></div>
+<div id="cur-ring"></div>
 
-               <div class="cv">
-                <a href="cv/usman-haider-resume.pdf" target="_blank"><button>Download <span class="colors">CV</span></button></a>
-            </div>
-            </div>
-            <!--about picture-->
-            <div class="about-img">
-                <img src="images/about.png" alt="Your Image">
-            </div>
-            </div>
-    
-            </div>
-            <!--services start-->
-            <!-- <div id="services">
-                <div class="color-changer">
-                    <div class="color-panel">
-                        <img src="images/gear.png" alt="">
-                    </div>
-                    <div class="color-selector">
-                        <div class="heading">Custom Colors</div>
-                        <div class="colors">
-                            <ul >
-                            <li>
-                                <a href="#0" class="color-red " title="color-red"></a>
-                            </li>
-                            <li>
-                                <a href="#0" class="color-purple" title="color-purple"></a>
-                            </li>
-                            <li>
-                                <a href="#0" class="color-malt" title="color-malt"></a>
-                            </li>
-                            <li>
-                                <a href="#0" class="color-green" title="color-green"></a>
-                            </li>
-                            <li>
-                                <a href="#0" class="color-blue" title="color-blue"></a>
-                            </li>
-                            <li>
-                                <a href="#0" class="color-orange" title="color-orange"></a>
-                            </li>
-                            </ul>
-                        </div>
-                    </div>
-                    </div> -->
-            <!--services header-->
-                    <!-- <div class="services-heading wow">
-                        <span class="color">My</span> Services
-                    </div> -->
-            <!--services header end-->
-            <!--services content-->
-                    <!-- <div class="services-content">
-                           <div class="service-one service wow">
-                               <div class="service-img">
-                               <img src="images/coding.png" alt="service-one">
-                               </div>
-                               <div class="service-description">
-                                <h2>ML Model Building</h2>
-                                <p>Creating custom machine learning models to solve complex problems and turn data into actionable insights.</p>
-                               </div>
-                           </div>
-                           <div class="service-two service wow">
-                               <div class="service-img">
-                               <img src="images/services/data-analysis.png" alt="service-two">
-                               </div>
-                               <div class="service-description">
-                                <h2>Data Analysis</h2>
-                                <p>Analyzing data using Python and Power BI to uncover trends, patterns, and insights that support better decision-making.</p>
-                               </div>
-                           </div>
+<!-- LOADER -->
+<div id="loader">
+  <div class="ld-title">UH.</div>
+  <div class="ld-progress"><div class="ld-bar"></div></div>
+  <div class="ld-pct" id="ldPct">0%</div>
+</div>
 
-                           <div class="service-three service wow">
-                            <div class="service-img">
-                                <img src="images/services/deep-learning.png" alt="service-three">
-                            </div>
-                            <div class="service-description">
-                                <h2>Deep Learning</h2>
-                                <p>Building and training deep learning models to solve complex problems, such as image recognition and natural language processing, with high accuracy.</p>
-                            </div>
-                        </div>
+<!-- FIVERR FLOAT -->
+<a href="https://www.fiverr.com/YOUR_USERNAME" target="_blank" class="fv-float hov" title="Hire on Fiverr">
+  <div class="fvfl-icon">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="#1dbf73"><path d="M23.004 15.588a.995.995 0 1 0 0-1.99.995.995 0 0 0 0 1.99zm-1.51 1.352h-2.46a2.32 2.32 0 0 0-.489-.976 2.166 2.166 0 0 0-.89-.666v-2.31a3.04 3.04 0 0 0-.142-.932 2.385 2.385 0 0 0-.405-.776 1.83 1.83 0 0 0-.648-.524 1.962 1.962 0 0 0-.867-.195h-1.663v-2.31H12.43v2.31H10.82v-2.31H8.824v2.31H7.214v1.997h1.61v4.32H7.214v1.997h1.61v.004h2.046v-.004h1.56v.004h2.046v-.004h.019c.326 0 .636-.07.91-.207a1.7 1.7 0 0 0 .71-.572c.196-.243.345-.534.44-.867.094-.33.13-.693.103-1.087a2.452 2.452 0 0 0-.3-.97 2.22 2.22 0 0 0-.648-.72c.193-.165.352-.365.468-.595.117-.23.184-.49.196-.774h.015c.19 0 .368.072.503.202.136.13.22.312.24.52v2.12c0 .33.05.642.142.932.092.29.228.55.405.776.177.225.39.402.648.524.255.121.548.185.867.186h2.46v-1.997z"/></svg>
+  </div>
+  <div class="fvfl-text">
+    <div class="fvfl-l1">Hire on</div>
+    <div class="fvfl-l2">Fiverr →</div>
+  </div>
+</a>
 
-                           <div class="service-three service wow">
-                                <div class="service-img">
-                                    <img src="images/services/chatbot.png" alt="service-three">
-                                </div>
-                                <div class="service-description">
-                                    <h2>RAG Chatbot</h2>
-                                    <p>Developing intelligent RAG (Retrieve and Generate) chatbots that provide accurate, context-driven responses for better user interactions.</p>
-                                </div>
-                            </div>
+<!-- NAVBAR -->
+<nav id="nav">
+  <a class="nav-logo hov" href="index.html">UH.</a>
+  <ul class="nav-links">
+    <li><a href="#about" class="hov">About</a></li>
+    <li><a href="services.html" class="hov">Services</a></li>
+    <li><a href="projects.html" class="hov">Projects</a></li>
+    <li><a href="testimonials.html" class="hov">Reviews</a></li>
+    <li><a href="https://www.fiverr.com/YOUR_USERNAME" target="_blank" class="nav-fv hov">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M23.004 15.588a.995.995 0 1 0 0-1.99.995.995 0 0 0 0 1.99zm-1.51 1.352h-2.46a2.32 2.32 0 0 0-.489-.976 2.166 2.166 0 0 0-.89-.666v-2.31a3.04 3.04 0 0 0-.142-.932 2.385 2.385 0 0 0-.405-.776 1.83 1.83 0 0 0-.648-.524 1.962 1.962 0 0 0-.867-.195h-1.663v-2.31H12.43v2.31H10.82v-2.31H8.824v2.31H7.214v1.997h1.61v4.32H7.214v1.997h1.61v.004h2.046v-.004h1.56v.004h2.046v-.004h.019c.326 0 .636-.07.91-.207a1.7 1.7 0 0 0 .71-.572c.196-.243.345-.534.44-.867.094-.33.13-.693.103-1.087a2.452 2.452 0 0 0-.3-.97 2.22 2.22 0 0 0-.648-.72c.193-.165.352-.365.468-.595.117-.23.184-.49.196-.774h.015c.19 0 .368.072.503.202.136.13.22.312.24.52v2.12c0 .33.05.642.142.932.092.29.228.55.405.776.177.225.39.402.648.524.255.121.548.185.867.186h2.46v-1.997z"/></svg>
+      Fiverr
+    </a></li>
+    <li><a href="#contact" class="nav-cta hov">Hire Me</a></li>
+  </ul>
+  <button class="ham" id="hamBtn"><span></span><span></span><span></span></button>
+</nav>
 
-                        <div class="service-four service wow">
-                            <div class="service-img">
-                                <img src="images/services/chatbot.png" alt="service-three">
-                            </div>
-                            <div class="service-description">
-                                <h2>AI Agents</h2>
-                                <p>Building AI agents that automate tasks, make decisions, and improve efficiency using advanced machine learning techniques.</p>
-                            </div>
-                        </div>
+<!-- MOB NAV -->
+<div class="mob-nav" id="mobNav">
+  <a href="#about" class="mob-close hov">About</a>
+  <a href="services.html" class="mob-close hov">Services</a>
+  <a href="projects.html" class="mob-close hov">Projects</a>
+  <a href="testimonials.html" class="mob-close hov">Reviews</a>
+  <a href="https://www.fiverr.com/YOUR_USERNAME" target="_blank" style="color:var(--fiverr)" class="hov">Fiverr ↗</a>
+  <a href="#contact" class="mob-close hov">Contact</a>
+</div>
 
-                        <div class="service-five service wow">
-                            <div class="service-img">
-                                <img src="images/services/chatbot.png" alt="service-three">
-                            </div>
-                            <div class="service-description">
-                                <h2>LLM Models Finetuning</h2>
-                                <p>
-                                    Fine-tuning large language models (LLMs) to enhance their performance and tailor them to specific tasks or industries for better accuracy and relevance.</p>
-                            </div>
-                        </div>
-
-                        <div class="service-five service wow">
-                            <div class="service-img">
-                                <img src="images/services/web-scraping.png" alt="service-three">
-                            </div>
-                            <div class="service-description">
-                                <h2>Web Scrapping</h2>
-                                <p>
-                                    Extracting valuable data from websites using automated tools to gather and analyze information efficiently.</p>
-                            </div>
-                        </div>
-
-                        <div class="service-five service wow">
-                            <div class="service-img">
-                                <img src="images/services/automation.png" alt="service-three">
-                            </div>
-                            <div class="service-description">
-                                <h2>Automation</h2>
-                                <p>
-                                    Automating repetitive tasks and processes to save time, reduce errors, and increase efficiency using advanced tools and techniques.</p>
-                            </div>
-                        </div>
-
-                    </div>
-            </div> -->
-            <!--services content end-->
-            <!--services end-->
-            <div id="skills">
-                <div class="skills-header">
-                    My <span class="color">Skills</span>
-                </div>
-                <div class="skills-content" style="text-align: center;">
-
-                    <div class="skill-html skill">
-                        <div class="skill-text"><div class="html">Python</div></div>
-                        <div class="html-prog wow prog"><div class="html-progress wow">95%</div></div>
-                    </div>
-
-                    <div class="skill-html skill">
-                        <div class="skill-text"><div class="html">MySQL</div></div>
-                        <div class="html-prog wow prog"><div class="html-progress wow">93%</div></div>
-                    </div>
-
-                    <div class="skill-html skill">
-                        <div class="skill-text"><div class="html">MongoDB</div></div>
-                        <div class="html-prog wow prog"><div class="html-progress wow">85%</div></div>
-                    </div>
-
-                    <div class="skill-html skill">
-                        <div class="skill-text"><div class="html">Neo4j</div></div>
-                        <div class="html-prog wow prog"><div class="html-progress wow">90%</div></div>
-                    </div>
-
-                    <div class="skill-html skill">
-                        <div class="skill-text"><div class="html">Vector Databases</div></div>
-                        <div class="html-prog wow prog"><div class="html-progress wow">95%</div></div>
-                    </div>
-
-                    <div class="skill-html skill">
-                        <div class="skill-text"><div class="html">Machine Learning</div></div>
-                        <div class="html-prog wow prog"><div class="js-progress wow">90%</div></div>
-                    </div>
-
-                    <div class="skill-html skill">
-                        <div class="skill-text"><div class="html">Deep Learning</div></div>
-                        <div class="html-prog wow prog"><div class="adobe-progress wow">85%</div></div>
-                    </div>
-
-                    <div class="skill-html skill">
-                        <div class="skill-text"><div class="html">Generative AI</div></div>
-                        <div class="html-prog wow prog"><div class="php-progress wow">90%</div></div>
-                    </div>
-
-                    <div class="skill-html skill">
-                        <div class="skill-text"><div class="html">Python Frameworks {Django, Flask, Dash}</div></div>
-                        <div class="html-prog wow prog"><div class="jquery-progress wow">92%</div></div>
-                    </div>
-
-                    <div class="skill-html skill">
-                        <div class="skill-text"><div class="html">Chatbot Development</div></div>
-                        <div class="html-prog wow prog"><div class="jquery-progress wow">90%</div></div>
-                    </div>
-
-                    <div class="skill-html skill">
-                        <div class="skill-text"><div class="html">LLM Models Fine Tuning</div></div>
-                        <div class="html-prog wow prog"><div class="jquery-progress wow">92%</div></div>
-                    </div>
-
-                    <div class="skill-html skill">
-                        <div class="skill-text"><div class="html">LLM Frameworks {LangChain, LlamaIndex}</div></div>
-                        <div class="html-prog wow prog"><div class="jquery-progress wow">95%</div></div>
-                    </div>
-
-                    <div class="skill-html skill">
-                        <div class="skill-text"><div class="html">RAG Systems (Retrieval-Augmented Generation)</div></div>
-                        <div class="html-prog wow prog"><div class="jquery-progress wow">93%</div></div>
-                    </div>
-
-                    <div class="skill-html skill">
-                        <div class="skill-text"><div class="html">AI Agents (Text & Calling)</div></div>
-                        <div class="html-prog wow prog"><div class="jquery-progress wow">90%</div></div>
-                    </div>
-
-                    <div class="skill-html skill">
-                        <div class="skill-text"><div class="html">Automation Tools {Make.com, n8n}</div></div>
-                        <div class="html-prog wow prog"><div class="jquery-progress wow">88%</div></div>
-                    </div>
-
-                    <div class="skill-html skill">
-                        <div class="skill-text"><div class="html">Web Scraping & Data Automation (Apify, Selenium)</div></div>
-                        <div class="html-prog wow prog"><div class="jquery-progress wow">90%</div></div>
-                    </div>
-
-                    <div class="skill-html skill">
-                        <div class="skill-text"><div class="html">API Integration & Workflow Orchestration</div></div>
-                        <div class="html-prog wow prog"><div class="jquery-progress wow">91%</div></div>
-                    </div>
-
-                    <div class="skill-html skill">
-                        <div class="skill-text"><div class="html">Docker</div></div>
-                        <div class="html-prog wow prog"><div class="jquery-progress wow">92%</div></div>
-                    </div>
-
-                    <div class="skill-html skill">
-                        <div class="skill-text"><div class="html">AWS</div></div>
-                        <div class="html-prog wow prog"><div class="jquery-progress wow">90%</div></div>
-                    </div>
-
-                    <div class="skill-html skill">
-                        <div class="skill-text"><div class="html">Git</div></div>
-                        <div class="html-prog wow prog"><div class="jquery-progress wow">90%</div></div>
-                    </div>
-
-                </div>
-            </div>
-
-    <!--copyright-section You Can Remove After Downloading-->
-            <div class="footer">
-             <div class="footer-text">
-                 <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Usman Haider
-             </div>
-            </div>
-    <!--copyright-section-->
-        </div>
-        <!--about end-->
-        <!--portfolio-->
-        <div id="portfolio">
-            <div class="color-changer">
-                <div class="color-panel">
-                    <img src="images/gear.png" alt="">
-                </div>
-                <div class="color-selector">
-                    <div class="heading">Custom Colors</div>
-                    <div class="colors">
-                        <ul >
-                        <li>
-                            <a href="#0" class="color-red " title="color-red"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-purple" title="color-purple"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-malt" title="color-malt"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-green" title="color-green"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-blue" title="color-blue"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-orange" title="color-orange"></a>
-                        </li>
-                        </ul>
-                    </div>
-                </div>
-                </div>
-            <div class="portfolio-header"> <span class="color"> My </span> Portfolio
-            <span class ="header-caption"> Some Of My <span class="color"> Works</span></span></div>
-             <div id="portfolio-content">
-
-                <div class="portfolio portfolio-first">
-                     <div class="portfolio-image">
-                        <img src="images/projects/trainmyai.jpg" alt="portfolio-first">
-                     </div>
-                     <div class="portfolio-text">
-                         <h2>TrainMyAI</h2>
-                         <p>TrainMyAI is a user-friendly tool designed to enable anyone to train deep learning models with just a single click. Built with a simple and interactive interface powered by Streamlit, this project aims to simplify the process of model training, evaluation, and inference.</p>
-                         <div class="button"><a href="https://github.com/osman-haider/TrainMyAI" target="_blank"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
-                     </div>
-                 </div>
-
-                 <div class="portfolio portfolio-first">
-                     <div class="portfolio-image">
-                        <img src="images/projects/chatical.png" alt="portfolio-first">
-                     </div>
-                     <div class="portfolio-text">
-                         <h2>Chatical</h2>
-                         <p>I led a project where we built a Chrome extension that automatically captures the content of the current webpage when you open it. The content is then stored in a Pinecone vector database, allowing users to chat and ask questions about the article they're viewing. The backend was developed using FastAPI and used a Retrieval-Augmented Generation (RAG) approach for answering questions.</p>
-                         <div class="button"><a href="https://github.com/IQLynxAI/Chaticle" target="_blank"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
-                     </div>
-                 </div>
-
-                 <div class="portfolio portfolio-first">
-                     <div class="portfolio-image">
-                        <img src="images/projects/student medical chatbot.jpg" alt="portfolio-first">
-                     </div>
-                     <div class="portfolio-text">
-                         <h2>Student Medical Chatbot </h2>
-                         <p>Developed a chatbot app for MBBS students to assist with their medical books using Llama Index. Improved accuracy by fine-tuning the model and storing embeddings in OpenSearch on AWS Cloud. Built the backend in Django with proper authentication and session management.</p>
-                         <!-- <div class="button"><a href="" target="_blank"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div> -->
-                     </div>
-                 </div>
-
-                 <div class="portfolio portfolio-first">
-                     <div class="portfolio-image">
-                        <img src="images/projects/inventory analysis.jpg" alt="portfolio-first">
-                     </div>
-                     <div class="portfolio-text">
-                         <h2>Inventory Analysis</h2>
-                         <p>Led the project and trained an XGBoost model on a dataset with over 5 million rows. Developed Django APIs to streamline model training and prediction for both sales forecasting and replenishment optimization. Integrated with AWS for data storage and retrieval.</p>
-                         <!-- <div class="button"><a href="https://github.com/osman-haider/LLM-Finetuning" target="_blank"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div> -->
-                     </div>
-                 </div>
-
-                 <div class="portfolio portfolio-first">
-                     <div class="portfolio-image">
-                        <img src="images/projects/football_analysis.jpg" alt="portfolio-first">
-                     </div>
-                     <div class="portfolio-text">
-                         <h2>Football Analysis</h2>
-                         <p>Developed a football analysis system that identifies player positions and tracks their movement speed in real time during live matches. We used YOLO for object detection, OpenCV for video processing, and PyTorch for building the underlying models.</p>
-                         <div class="button"><a href="https://github.com/IQLynxAI/football-analysis" target="_blank"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
-                     </div>
-                 </div>
-
-                 <div class="portfolio portfolio-first">
-                     <div class="portfolio-image">
-                        <img src="images/projects/llm_applications.jpg" alt="portfolio-first">
-                     </div>
-                     <div class="portfolio-text">
-                         <h2>LLM Applications</h2>
-                         <p>This repository is dedicated to building AI agents and Retrieval-Augmented Generation (RAG) projects powered by large language models (LLMs). Our goal is to create intelligent, automated solutions for various applications.</p>
-                         <div class="button"><a href="https://github.com/IQLynxAI/LLM-Applications" target="_blank"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
-                     </div>
-                 </div>
-
-                 <div class="portfolio portfolio-first">
-                     <div class="portfolio-image">
-                        <img src="images/projects/finetune-llm-models.png" alt="portfolio-first">
-                     </div>
-                     <div class="portfolio-text">
-                         <h2>Finetune LLM Models</h2>
-                         <p>In this repository, I fine-tune various large language models (LLMs), such as BERT, for tasks including sentiment analysis, question answering, summarization, text generation, text-to-text, text-to-speech, text-to-audio, audio classification, image classification, and more.</p>
-                         <div class="button"><a href="https://github.com/osman-haider/LLM-Finetuning" target="_blank"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
-                     </div>
-                 </div>
-                 <div class="portfolio portfolio-second">
-                    <div class="portfolio-image">
-                        <img src="images/projects/mobile_price_prediction.jpg" alt="portfolio-second">
-                    </div>
-                    <div class="portfolio-text">
-                        <h2>Mobile Price Prediction</h2>
-                        <p>The aim of this project is to predict the prices of Samsung mobile phones based on various features using two different machine learning algorithms: Linear Regression and Random Forest. The project involves data analysis, feature engineering, model building, and evaluation.</p>
-                        <div class="button"><a href="https://github.com/osman-haider/Mobile-Price-Prediction"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
-                    </div>
-                </div>
-             
-                <div class="portfolio portfolio-third">
-                    <div class="portfolio-image">
-                        <img src="images/projects/agrefine.jpg" alt="portfolio-third">
-                    </div>
-                    <div class="portfolio-text">
-                        <h2>Agrefine</h2>
-                        <p>Agrefine is an Android application designed to assist farmers and agriculture enthusiasts in optimizing their crop cultivation and trading processes. The application is divided into three primary functionalities: Crop Prediction, Fertilizer Suggestion, Agricultural Product Marketplace</p>
-                        <div class="button"><a href="https://github.com/osman-haider/Agrefine" target="_blank"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
-                    </div>
-                </div>
-                <div class="portfolio portfolio-fourth">
-                    <div class=" portfolio-image">
-                        <img src="images/projects/olymnpics.jpg" alt="portfolio-fourth">
-                    </div>
-                    <div class="portfolio-text">
-                        <h2>Olympics Data Analysis</h2>
-                        <p>The Olympic Data Analysis Web Application is a Python-based project built using Streamlit that offers comprehensive insights into Olympic data. Covering data from various Olympic events up until 2017, this web application enables users to perform in-depth analyses and explore historical trends related to the Olympics.</p>
-                        <div class="button"><a href="https://github.com/osman-haider/Olympics-data-analysis" target="_blank"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
-                    </div>
-                </div>
-                 </div>
-                    <!--copyright-section You Can Remove After Downloading-->
-            <div class="footer">
-                <div class="footer-text">
-                    <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Usman Haider
-                </div>
-               </div>
-       <!--copyright-section-->
-             </div>
-        <!--portfolio end-->
-        <!--blog-->
-        <div id="blog">
-            <div class="color-changer">
-                <div class="color-panel">
-                    <img src="images/gear.png" alt="">
-                </div>
-                <div class="color-selector">
-                    <div class="heading">Custom Colors</div>
-                    <div class="colors">
-                        <ul >
-                        <li>
-                            <a href="#0" class="color-red " title="color-red"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-purple" title="color-purple"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-malt" title="color-malt"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-green" title="color-green"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-blue" title="color-blue"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-orange" title="color-orange"></a>
-                        </li>
-                        </ul>
-                    </div>
-                </div>
-                </div>
-        <div class="blog-header"> Blogs</span>
-            <span class ="header-caption"> My Latest <span class="color"> blog posts.</span></span></div>
-            <div class="blog-content">
-                 <div class="blogs">
-                     <a href="https://usman-haider.medium.com/mastering-the-art-of-complete-model-prediction-in-machine-learning-163d1788c51e" target="_blank">
-                     <div class="img">
-                        <img src="images/blogs/Machine_Learning_Model_Prediction_Visualization.png" alt="blog-one">
-                        <div class="blog-date">18 Aug,23</div>
-                     </div>
-                     <div class="blog-text">
-                         <h3>Model Prediction in ML</h3>
-                         <p>Machine learning allows us to make smart, data-based predictions. The main goal is to build models that 
-                            predict outcomes accurately. This guide covers the steps to complete model prediction: data preparation, 
-                            choosing a model, training, testing, and deployment.</p>
-                     </div></a>
-                 </div>      
-                 <div class="blogs">
-                    <a href="https://usman-haider.medium.com/the-transformative-power-of-ai-changing-lives-across-the-globe-84ada7caecf4" target="_blank">
-                    <div class="img">
-                        <img src="images/blogs/Transformative_Power_of_AI_Changing_Lives.png" alt="blog-two">
-                        <div class="blog-date">18 Aug,23</div>
-                    </div>
-                    <div class="blog-text">
-                        <h3>Transformative Power of AI</h3>
-                        <p>Artificial Intelligence (AI) is rapidly changing our lives, impacting areas like healthcare, transportation, 
-                            education, and entertainment. It goes beyond simple automation, helping us work better, faster, and with 
-                            new possibilities. In this blog, we’ll explore how AI is improving lives worldwide.</p>
-                    </div></a>
-                </div>      
-                <div class="blogs">
-                    <a href="https://usman-haider.medium.com/a-comprehensive-guide-to-etl-with-spark-and-scala-0bf6e1b6dab1" target="_blank">
-                    <div class="img">
-                        <img src="images/blogs/ETL_with_Spark_and_Scala_Guide.png" alt="blog-three">
-                        <div class="blog-date">29 Nov,23</div>
-                    </div>
-                    <div class="blog-text">
-                        <h3>ETL with Spark and Scala</h3>
-                        <p>In big data, organizations need efficient ways to process large datasets. Extract, Transform, Load (ETL) 
-                            processes gather, convert, and load data for analysis. Apache Spark and the Scala language offer a 
-                            powerful solution for large-scale ETL. This blog will explore ETL with Spark and Scala, including key 
-                            concepts, tips, and an example.</p>
-                    </div></a>
-                </div>
-                <div class="blogs">
-                    <a href="https://blog.gopenai.com/creating-conversational-chatbot-5a37a4fd7d33" target="_blank">
-                    <div class="img">
-                        <img src="images/blogs/Creating_Conversational_Chatbot_Guide.png" alt="blog-four">
-                        <div class="blog-date">9 Dec,23</div>
-                    </div>
-                    <div class="blog-text">
-                        <h3>Conversational Chatbot</h3>
-                        <p>With the growing demand for chatbots, especially ChatGPT, I decided to create a blog on chatbot development. 
-                            This blog will focus on building rule-based chatbots, with a bonus section at the end for those who read 
-                            it all.</p>
-                    </div></a>
-                </div>   
-            </div>
-               <!--copyright-section You Can Remove After Downloading-->
-               <div class="footer">
-                <div class="footer-text">
-                    <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Usman Haider
-                </div>
-               </div>
-       <!--copyright-section-->
-        </div>
-        <!--blog end-->
-        <!--contact-->
-     <div id="contact">
-        <div class="color-changer">
-            <div class="color-panel">
-                <img src="images/gear.png" alt="">
-            </div>
-            <div class="color-selector">
-                <div class="heading">Custom Colors</div>
-                <div class="colors">
-                    <ul >
-                    <li>
-                        <a href="#0" class="color-red " title="color-red"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-purple" title="color-purple"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-malt" title="color-malt"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-green" title="color-green"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-blue" title="color-blue"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-orange" title="color-orange"></a>
-                    </li>
-                    </ul>
-                </div>
-            </div>
-            </div>
-         <div class="contact-header">Contact <span class="color"> Me</span>
-        <div class="contact-header-caption"> <span class="color"> Get</span> In Touch.</div></div>
-        <div class="contact-content">
-            <!--Contact form-->
-             <div class="contact-form">
-                 <div class="form-header">
-                     Message Me
-                 </div>
-                 <form id="myForm" action="#">
-                    <div class="input-line">
-                        <input  id="name" type="text" placeholder="Name" class="input-name" required>
-                        <input id="email" type="email" placeholder="Email"  class="input-name" required>
-                    </div>
-                    <input type="text" id="subject" placeholder="subject" class="input-subject">
-                    <textarea id ="body" class="input-textarea" placeholder="message" required></textarea>
-                    <button type="button" id ="submit" value="send">Submit</button>
-                    <div id="message" style="display: none; margin-left: 10px;"></div>
-                 </form>
-               
-             </div>
-            <!--Contact form-->
-            <!--Contact information-->
-             <div class="contact-info">
-                <div class="contact-info-header">
-                    Contact Info
-                </div>
-                <div class="contact-info-content">
-                <div class="contect-info-content-line">
-                    <img src="./images/icon-name.png" class="icon" alt="name-icon">
-                    <div class="contact-info-icon-text">
-                        <h6>Name</h6>
-                        <p>Usman Haider</p>
-                  </div>
-                </div>
-                <div class="contect-info-content-line">
-                  <img src="./images/icon-location.png" class="icon" alt="location-icon">
-                  <div class="contact-info-icon-text">
-                      <h6>Location</h6>
-                      <p>Pakistan, Lahore</p>
-                </div>
-              </div>
-              <div class="contect-info-content-line">
-                  <img src="./images/icon-phone.png" class="icon" alt="phone-icon">
-                  <div class="contact-info-icon-text">
-                      <h6>Call</h6>
-                      <p>+92304-1581788</p>
-                </div>
-              </div>
-              
-              <div class="contect-info-content-line">
-                  <img src="./images/icon-email.png" class="icon" alt="email-icon">
-                  <div class="contact-info-icon-text">
-                      <h6>Email</h6>
-                      <p>osmanhaider167@gmail.com</p>
-                </div>
-              </div>
-                </div>
-            <!--Contact information end-->
-           </div>
-        </div>
-                    <!--copyright-section You Can Remove After Downloading-->
-                    <div class="footer">
-                        <div class="footer-text">
-                            <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Usman Haider
-                        </div>
-                       </div>
-               <!--copyright-section-->
-     </div>
-        <!--contact end-->
+<!-- ═══════════ HERO ═══════════ -->
+<main id="main-content">
+<section id="hero" aria-label="Hero — Usman Haider AI/ML Engineer">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-eyebrow"><div class="eyebrow-dot"></div>Available for New Projects</div>
+      <h1 class="hero-h" id="heroTitle">
+        <span id="typeTarget"></span>
+      </h1>
+      <span class="type-cursor" aria-hidden="true"></span>
+      <p class="hero-desc">Senior AI/ML & Automation Engineer with 5+ years engineering intelligent systems — LLM agents, fine-tuned models, and end-to-end SaaS platforms that cut costs and scale automatically.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-gold hov">Start a Project →</a>
+        <a href="projects.html" class="btn-ghost hov">View Portfolio</a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="hstat-val" data-count="5">0</div><div class="hstat-label">Years Exp.</div></div>
+        <div><div class="hstat-val" data-count="50">0</div><div class="hstat-label">Projects</div></div>
+        <div><div class="hstat-val" data-count="40">0</div><div class="hstat-label">Clients</div></div>
+      </div>
+      <a href="https://www.fiverr.com/YOUR_USERNAME" target="_blank" class="fv-hero-pill hov">
+        <div class="fvp-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M23.004 15.588a.995.995 0 1 0 0-1.99.995.995 0 0 0 0 1.99zm-1.51 1.352h-2.46a2.32 2.32 0 0 0-.489-.976 2.166 2.166 0 0 0-.89-.666v-2.31a3.04 3.04 0 0 0-.142-.932 2.385 2.385 0 0 0-.405-.776 1.83 1.83 0 0 0-.648-.524 1.962 1.962 0 0 0-.867-.195h-1.663v-2.31H12.43v2.31H10.82v-2.31H8.824v2.31H7.214v1.997h1.61v4.32H7.214v1.997h1.61v.004h2.046v-.004h1.56v.004h2.046v-.004h.019c.326 0 .636-.07.91-.207a1.7 1.7 0 0 0 .71-.572c.196-.243.345-.534.44-.867.094-.33.13-.693.103-1.087a2.452 2.452 0 0 0-.3-.97 2.22 2.22 0 0 0-.648-.72c.193-.165.352-.365.468-.595.117-.23.184-.49.196-.774h.015c.19 0 .368.072.503.202.136.13.22.312.24.52v2.12c0 .33.05.642.142.932.092.29.228.55.405.776.177.225.39.402.648.524.255.121.548.185.867.186h2.46v-1.997z"/></svg></div>
+        <div class="fvp-text"><div class="t1">Also on Fiverr</div><div class="t2">⭐⭐⭐⭐⭐ View profile & verified reviews</div></div>
+        <div class="fvp-arr">→</div>
+      </a>
     </div>
-    <!--all the divisions-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/particles.js"></script>
-    <script src="js/particles.min.js"></script>
-    <script src="js/index.js"></script>
-    <!--particles script-->
-    <script>
-  particlesJS("particles", {"particles":{"number":{"value":40,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
-    </script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script src="js/contacts.js"></script>   
+    <!-- PYTHON TERMINAL CARD -->
+    <div class="hero-right">
+      <div class="py-terminal" id="pyCard">
+        <!-- floating dots inside terminal -->
+        <div class="py-particle" style="width:4px;height:4px;left:15%;top:60%;animation-duration:4s;animation-delay:0s"></div>
+        <div class="py-particle" style="width:3px;height:3px;left:55%;top:70%;animation-duration:5.5s;animation-delay:1s"></div>
+        <div class="py-particle" style="width:5px;height:5px;left:80%;top:55%;animation-duration:3.8s;animation-delay:2s"></div>
+        <div class="py-particle" style="width:3px;height:3px;left:35%;top:80%;animation-duration:6s;animation-delay:.5s"></div>
+        <div class="py-particle" style="width:4px;height:4px;left:70%;top:75%;animation-duration:4.5s;animation-delay:1.5s;background:rgba(232,200,74,0.5)"></div>
+        <div class="py-titlebar">
+          <div class="py-dots">
+            <div class="py-dot py-dot-r"></div>
+            <div class="py-dot py-dot-y"></div>
+            <div class="py-dot py-dot-g"></div>
+          </div>
+          <div class="py-filename">usman_haider.py</div>
+        </div>
+        <div class="py-body" id="pyBody">
+          <span class="py-cmt"># AI/ML Engineer Profile</span><br/><br/>
+          <span class="py-kw">name</span> <span class="py-op">= </span><span class="py-str">"Usman Haider"</span><br/>
+          <span class="py-kw">title</span> <span class="py-op">= </span><span class="py-str">"AI/ML Engineer"</span><br/>
+          <span class="py-kw">experience</span> <span class="py-op">= </span><span class="py-num">5</span> <span class="py-cmt"># years</span><br/><br/>
+          <span class="py-kw">skills</span> <span class="py-op">= </span><span class="py-bracket">[</span><br/>
+          <span class="py-indent"><span class="py-str">"LLM Fine-Tuning"</span><span class="py-bracket">,</span></span><br/>
+          <span class="py-indent"><span class="py-str">"AI Automation"</span><span class="py-bracket">,</span></span><br/>
+          <span class="py-indent"><span class="py-str">"SaaS Development"</span><span class="py-bracket">,</span></span><br/>
+          <span class="py-indent"><span class="py-str">"ML Engineering"</span></span><br/>
+          <span class="py-bracket">]</span><br/><br/>
+          <span class="py-kw">status</span> <span class="py-op">= </span><span class="py-const">OPEN_TO_WORK</span><span class="py-cursor"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- ABOUT -->
+<section id="about" aria-label="About Usman Haider">
+<div class="divider"></div>
+
+<div id="about-section">
+  <div class="s-eyebrow reveal">About Me</div>
+  <h2 class="s-title reveal reveal-d1">The Engineer Behind<br/><span style="background:linear-gradient(90deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent">Every System</span></h2>
+  <div class="about-grid">
+    <div class="about-photo-wrap reveal">
+      <div class="about-photo-frame">
+        <img src="usman-photo.png" alt="Usman Haider — AI/ML Engineer" onerror="this.style.display='none';this.parentElement.querySelector('.ab-initials').style.display='flex'"/>
+        <div class="ab-initials" style="display:none;width:100%;height:100%;align-items:center;justify-content:center;font-family:var(--fd);font-size:7rem;font-weight:700;background:linear-gradient(135deg,var(--plasma),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;opacity:.3">UH</div>
+      </div>
+      <div class="about-badge ab-exp">⚡ 5+ Years Experience</div>
+      <div class="about-badge ab-proj">🚀 50+ Projects Delivered</div>
+    </div>
+    <!-- LIVE INTELLIGENCE CARD -->
+    <div class="about-content reveal reveal-d1">
+      <div class="li-card" id="liCard">
+        <div class="li-header">
+          <div class="li-badge"><span class="li-dot"></span>LIVE INTELLIGENCE</div>
+          <div class="li-title">Usman Haider</div>
+          <div class="li-sub">AI/ML &amp; Automation Engineer</div>
+        </div>
+        <div class="li-rows">
+          <div class="li-row">
+            <div class="li-icon" style="background:linear-gradient(135deg,#3b1e6e,#6b3fa0)">🤖</div>
+            <div class="li-label">AI Automation</div>
+            <div class="li-bar-wrap"><div class="li-bar" data-w="96"></div></div>
+            <div class="li-pct">96%</div>
+          </div>
+          <div class="li-row">
+            <div class="li-icon" style="background:linear-gradient(135deg,#1a2e4a,#1e4080)">🔬</div>
+            <div class="li-label">LLM Fine-Tuning</div>
+            <div class="li-bar-wrap"><div class="li-bar" data-w="94"></div></div>
+            <div class="li-pct">94%</div>
+          </div>
+          <div class="li-row">
+            <div class="li-icon" style="background:linear-gradient(135deg,#4a1a1a,#8b2020)">🚀</div>
+            <div class="li-label">SaaS Development</div>
+            <div class="li-bar-wrap"><div class="li-bar" data-w="91"></div></div>
+            <div class="li-pct">91%</div>
+          </div>
+          <div class="li-row">
+            <div class="li-icon" style="background:linear-gradient(135deg,#3a1a1a,#7a1a2a)">👁️</div>
+            <div class="li-label">Computer Vision</div>
+            <div class="li-bar-wrap"><div class="li-bar" data-w="88"></div></div>
+            <div class="li-pct">88%</div>
+          </div>
+          <div class="li-row">
+            <div class="li-icon" style="background:linear-gradient(135deg,#0d3320,#0d9955)">⚡</div>
+            <div class="li-label">Backend / AWS</div>
+            <div class="li-bar-wrap"><div class="li-bar" data-w="93"></div></div>
+            <div class="li-pct">93%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FIVERR BAND -->
+<div class="fv-band">
+  <div class="fv-band-inner">
+    <div class="fvb-left">
+      <div class="fvb-logo"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M23.004 15.588a.995.995 0 1 0 0-1.99.995.995 0 0 0 0 1.99zm-1.51 1.352h-2.46a2.32 2.32 0 0 0-.489-.976 2.166 2.166 0 0 0-.89-.666v-2.31a3.04 3.04 0 0 0-.142-.932 2.385 2.385 0 0 0-.405-.776 1.83 1.83 0 0 0-.648-.524 1.962 1.962 0 0 0-.867-.195h-1.663v-2.31H12.43v2.31H10.82v-2.31H8.824v2.31H7.214v1.997h1.61v4.32H7.214v1.997h1.61v.004h2.046v-.004h1.56v.004h2.046v-.004h.019c.326 0 .636-.07.91-.207a1.7 1.7 0 0 0 .71-.572c.196-.243.345-.534.44-.867.094-.33.13-.693.103-1.087a2.452 2.452 0 0 0-.3-.97 2.22 2.22 0 0 0-.648-.72c.193-.165.352-.365.468-.595.117-.23.184-.49.196-.774h.015c.19 0 .368.072.503.202.136.13.22.312.24.52v2.12c0 .33.05.642.142.932.092.29.228.55.405.776.177.225.39.402.648.524.255.121.548.185.867.186h2.46v-1.997z"/></svg></div>
+      <div>
+        <div class="fvb-title">Hire Me on Fiverr — Trusted by 40+ Clients</div>
+        <div class="fvb-sub">Order with <em>secure payment</em>, <em>money-back guarantee</em> & <em>verified 5-star reviews</em></div>
+      </div>
+    </div>
+    <div class="fvb-right">
+      <div class="fvb-chip">⭐ 5.0 Rating</div>
+      <div class="fvb-chip">✅ 40+ Orders</div>
+      <div class="fvb-chip">🔒 Secure</div>
+      <a href="https://www.fiverr.com/YOUR_USERNAME" target="_blank" class="btn-fv hov">View Profile →</a>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- SERVICES -->
+<section id="services" aria-label="AI & Automation Services" class="section">
+  <div class="s-eyebrow reveal">Services</div>
+  <h2 class="s-title reveal reveal-d1">Solutions Built for <br/>Real Business Impact</h2>
+  <p class="s-sub reveal reveal-d2">Each service is engineered to deliver measurable ROI — not demos, real production systems.</p>
+  <div class="sv-grid" id="svGrid"></div>
+  <div class="view-all-row reveal">
+    <a href="services.html" class="btn-viewall hov">Explore All 7 Services <span class="arr">→</span></a>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- PROJECTS -->
+<section id="projects" aria-label="Portfolio Projects" class="section">
+  <div class="s-eyebrow reveal">Portfolio</div>
+  <h2 class="s-title reveal reveal-d1">Featured Work</h2>
+  <p class="s-sub reveal reveal-d2">A curated selection of AI-powered systems built for real clients with real outcomes.</p>
+  <div class="pr-grid" id="prGrid"></div>
+  <div class="view-all-row reveal">
+    <a href="projects.html" class="btn-viewall hov">Browse All 16 Projects <span class="arr">→</span></a>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" aria-label="Client Reviews & Testimonials" class="section">
+  <div class="s-eyebrow reveal">Reviews</div>
+  <h2 class="s-title reveal reveal-d1">What Clients Say</h2>
+  <p class="s-sub reveal reveal-d2">40+ completed projects. Every client a story of results.</p>
+  <div class="testi-stage reveal">
+    <div class="testi-track" id="tTrack"></div>
+    <div class="t-ctrl">
+      <button class="t-btn hov" id="tPrev">←</button>
+      <div class="t-dots" id="tDots"></div>
+      <button class="t-btn hov" id="tNext">→</button>
+    </div>
+  </div>
+  <div class="view-all-row reveal">
+    <a href="testimonials.html" class="btn-viewall hov">Read All Reviews <span class="arr">→</span></a>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- CONTACT -->
+<section id="contact" aria-label="Contact Usman Haider">
+<div class="contact-section">
+  <div class="s-eyebrow reveal">Contact</div>
+  <h2 class="s-title reveal reveal-d1">Let's Build Something<br/><span style="background:linear-gradient(90deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent">Exceptional</span></h2>
+  <div class="contact-grid">
+    <div class="reveal">
+      <p class="s-sub" style="margin-bottom:28px">Have a project? I respond within 24 hours and will tell you exactly how I'd build it.</p>
+      <div class="c-info-item"><div class="c-icon">📧</div><div><div class="c-label">Email</div><div class="c-val"><a href="mailto:usman@example.com" style="color:inherit">usman@example.com</a></div></div></div>
+      <div class="c-info-item"><div class="c-icon">📍</div><div><div class="c-label">Location</div><div class="c-val">Remote — Available Globally</div></div></div>
+      <div class="c-info-item"><div class="c-icon">⚡</div><div><div class="c-label">Response</div><div class="c-val">Within 24 Hours</div></div></div>
+      <a href="https://www.fiverr.com/YOUR_USERNAME" target="_blank" class="fv-hire-card hov">
+        <div class="fvh-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M23.004 15.588a.995.995 0 1 0 0-1.99.995.995 0 0 0 0 1.99zm-1.51 1.352h-2.46a2.32 2.32 0 0 0-.489-.976 2.166 2.166 0 0 0-.89-.666v-2.31a3.04 3.04 0 0 0-.142-.932 2.385 2.385 0 0 0-.405-.776 1.83 1.83 0 0 0-.648-.524 1.962 1.962 0 0 0-.867-.195h-1.663v-2.31H12.43v2.31H10.82v-2.31H8.824v2.31H7.214v1.997h1.61v4.32H7.214v1.997h1.61v.004h2.046v-.004h1.56v.004h2.046v-.004h.019c.326 0 .636-.07.91-.207a1.7 1.7 0 0 0 .71-.572c.196-.243.345-.534.44-.867.094-.33.13-.693.103-1.087a2.452 2.452 0 0 0-.3-.97 2.22 2.22 0 0 0-.648-.72c.193-.165.352-.365.468-.595.117-.23.184-.49.196-.774h.015c.19 0 .368.072.503.202.136.13.22.312.24.52v2.12c0 .33.05.642.142.932.092.29.228.55.405.776.177.225.39.402.648.524.255.121.548.185.867.186h2.46v-1.997z"/></svg></div>
+        <div><div class="fvh-t1">Prefer Fiverr?</div><div class="fvh-t2">Order on Fiverr — Guaranteed</div><div class="fvh-t3">Secure payment · 5.0 rating · Money-back</div></div>
+        <div class="fvh-arr">→</div>
+      </a>
+      <div class="socials">
+        <a href="#" class="soc-btn hov" aria-label="Instagram"><svg width="17" height="17" fill="none" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+        <a href="#" class="soc-btn hov" aria-label="LinkedIn"><svg width="17" height="17" fill="none" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="4" stroke="currentColor" stroke-width="1.8"/><path d="M8 11v5M8 8v.5M12 16v-3a2 2 0 014 0v3M12 11v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
+        <a href="#" class="soc-btn hov" aria-label="GitHub"><svg width="17" height="17" fill="none" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.49.5.09.682-.218.682-.482 0-.237-.009-.868-.014-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.03-2.682-.103-.253-.447-1.27.098-2.646 0 0 .84-.268 2.75 1.026A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.026 2.747-1.026.547 1.376.202 2.393.1 2.646.64.698 1.026 1.591 1.026 2.682 0 3.841-2.337 4.687-4.565 4.934.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" stroke="currentColor" stroke-width="1.5"/></svg></a>
+        <a href="https://www.fiverr.com/YOUR_USERNAME" target="_blank" class="soc-btn soc-fv hov" aria-label="Fiverr Profile"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M23.004 15.588a.995.995 0 1 0 0-1.99.995.995 0 0 0 0 1.99zm-1.51 1.352h-2.46a2.32 2.32 0 0 0-.489-.976 2.166 2.166 0 0 0-.89-.666v-2.31a3.04 3.04 0 0 0-.142-.932 2.385 2.385 0 0 0-.405-.776 1.83 1.83 0 0 0-.648-.524 1.962 1.962 0 0 0-.867-.195h-1.663v-2.31H12.43v2.31H10.82v-2.31H8.824v2.31H7.214v1.997h1.61v4.32H7.214v1.997h1.61v.004h2.046v-.004h1.56v.004h2.046v-.004h.019c.326 0 .636-.07.91-.207a1.7 1.7 0 0 0 .71-.572c.196-.243.345-.534.44-.867.094-.33.13-.693.103-1.087a2.452 2.452 0 0 0-.3-.97 2.22 2.22 0 0 0-.648-.72c.193-.165.352-.365.468-.595.117-.23.184-.49.196-.774h.015c.19 0 .368.072.503.202.136.13.22.312.24.52v2.12c0 .33.05.642.142.932.092.29.228.55.405.776.177.225.39.402.648.524.255.121.548.185.867.186h2.46v-1.997z"/></svg></a>
+      </div>
+    </div>
+    <div class="contact-form reveal">
+      <div class="f-group"><label class="f-label" for="cN">Name</label><input id="cN" type="text" class="f-input" placeholder="John Smith" autocomplete="name"/></div>
+      <div class="f-group"><label class="f-label" for="cE">Email</label><input id="cE" type="email" class="f-input" placeholder="john@company.com" autocomplete="email"/></div>
+      <div class="f-group"><label class="f-label" for="cM">Project Details</label><textarea id="cM" class="f-textarea" placeholder="Tell me about your project..."></textarea></div>
+      <button class="f-submit hov" id="fSub">Send Message →</button>
+      <div class="f-ok" id="fOk">✅ Sent! I'll reply within 24 hours.</div>
+    </div>
+  </div>
+</div>
+</section>
+</main>
+
+<footer role="contentinfo" aria-label="Site footer">
+  <div class="foot-inner">
+    <a class="foot-logo hov" href="index.html" aria-label="Usman Haider Home">UH.</a>
+    <div class="foot-copy">© 2025 Usman Haider. All rights reserved.</div>
+    <a href="https://www.fiverr.com/YOUR_USERNAME" target="_blank" class="foot-fv hov" rel="noopener noreferrer">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M23.004 15.588a.995.995 0 1 0 0-1.99.995.995 0 0 0 0 1.99zm-1.51 1.352h-2.46a2.32 2.32 0 0 0-.489-.976 2.166 2.166 0 0 0-.89-.666v-2.31a3.04 3.04 0 0 0-.142-.932 2.385 2.385 0 0 0-.405-.776 1.83 1.83 0 0 0-.648-.524 1.962 1.962 0 0 0-.867-.195h-1.663v-2.31H12.43v2.31H10.82v-2.31H8.824v2.31H7.214v1.997h1.61v4.32H7.214v1.997h1.61v.004h2.046v-.004h1.56v.004h2.046v-.004h.019c.326 0 .636-.07.91-.207a1.7 1.7 0 0 0 .71-.572c.196-.243.345-.534.44-.867.094-.33.13-.693.103-1.087a2.452 2.452 0 0 0-.3-.97 2.22 2.22 0 0 0-.648-.72c.193-.165.352-.365.468-.595.117-.23.184-.49.196-.774h.015c.19 0 .368.072.503.202.136.13.22.312.24.52v2.12c0 .33.05.642.142.932.092.29.228.55.405.776.177.225.39.402.648.524.255.121.548.185.867.186h2.46v-1.997z"/></svg>
+      Hire on Fiverr
+    </a>
+  </div>
+</footer>
+
+<button id="stBtn" title="Back to top" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="12" y1="19" x2="12" y2="5"/>
+    <polyline points="5 12 12 5 19 12"/>
+  </svg>
+</button>
+
+<script>
+/* ══════════════════════════════════
+   DATA
+══════════════════════════════════ */
+const SERVICES=[
+  {icon:'🤖',n:'01',title:'AI Automation',desc:'End-to-end automation pipelines eliminating manual work and orchestrating intelligent workflows at enterprise scale.',tag:'Save 80% manual effort',bg:'rgba(232,200,74,.06)'},
+  {icon:'💬',n:'02',title:'LLM Chatbot Development',desc:'Conversational AI agents powered by GPT-4 and fine-tuned models — customer service, onboarding, and lead generation that works 24/7.',tag:'24/7 intelligent support',bg:'rgba(79,200,255,.06)'},
+  {icon:'📞',n:'03',title:'AI Calling Agents',desc:'Voice agents via Twilio + ElevenLabs handling calls, reminders, and outreach at massive scale with natural human speech.',tag:'Scale outreach 10×',bg:'rgba(167,139,250,.06)'},
+  {icon:'🔬',n:'04',title:'LLM Fine-Tuning',desc:'Fine-tune GPT, Whisper, and open-source LLMs on your domain data using RLHF, LoRA, and PPO for best-in-class accuracy.',tag:'Domain-optimized AI',bg:'rgba(244,114,182,.06)'},
+];
+const PROJECTS=[
+  {id:'01',icon:'🕸️',title:'Retail Knowledge Graph',desc:'Semantic graph with AI agents & LLM-powered Cypher queries in Neo4j — non-technical staff query data in plain English via MCP.',tags:['Neo4j','LangChain','Gemini'],bg:'rgba(79,200,255,.07)'},
+  {id:'02',icon:'🗣️',title:'LuxTuoter Language App',desc:'Luxembourgish learning SaaS with fine-tuned Whisper, custom TTS engine, and RAG-powered Q&A for immersive language acquisition.',tags:['Whisper','RAG','React'],bg:'rgba(232,200,74,.07)'},
+  {id:'03',icon:'🔬',title:'RLHF Fine-Tuning Pipeline',desc:'Full RLHF pipeline — dataset generation, reward modeling, PPO optimization using TRL — production-grade LLM alignment.',tags:['RLHF','PPO','TRL'],bg:'rgba(167,139,250,.07)'},
+  {id:'04',icon:'🎙️',title:'Speak AI Platform',desc:'Complete agentic SaaS for AI voice agents: admin panel, ElevenLabs TTS, Twilio calling, lead gen, Stripe billing. White-label ready.',tags:['ElevenLabs','Twilio','Stripe'],bg:'rgba(79,200,255,.07)'},
+];
+const TESTIMONIALS=[
+  {name:'James Carter',role:'CEO, TechFlow Inc.',text:'Usman built our entire AI automation pipeline in 6 weeks. What used to take 3 days now runs in under an hour. ROI was immediate.',stars:5,g:'linear-gradient(135deg,#e8c84a,#c4973a)'},
+  {name:'Sarah Mitchell',role:'Product Manager, RetailOS',text:'The knowledge graph completely transformed how our team explores data. Non-technical staff now query complex datasets in plain English.',stars:5,g:'linear-gradient(135deg,#4fc8ff,#006aff)'},
+  {name:'Ahmed Al-Rashid',role:'Founder, InsureTech Arabia',text:'The insurance automation agent handles our entire onboarding flow. Customer support costs dropped 40%. Best investment we\'ve made.',stars:5,g:'linear-gradient(135deg,#a78bfa,#f472b6)'},
+  {name:'Emma Schwartz',role:'Head of ML, AviationAI',text:'Whisper fine-tuning for ATC was exceptional. Delivered 20% WER reduction — better than our internal benchmark expected.',stars:5,g:'linear-gradient(135deg,#1dbf73,#0d9955)'},
+  {name:'Liu Wei',role:'CTO, DataDriven Co.',text:'The RLHF pipeline is production-quality. Reward modeling and PPO optimization work flawlessly. His LLM alignment depth is rare.',stars:5,g:'linear-gradient(135deg,#e8c84a,#4fc8ff)'},
+];
+
+/* ══════════════════════════════════
+   RENDER
+══════════════════════════════════ */
+document.getElementById('svGrid').innerHTML=SERVICES.map(s=>`
+  <div class="sv-card reveal">
+    <div class="sv-card-inner" style="background:linear-gradient(135deg,${s.bg},var(--glass))">
+      <div class="sv-num">${s.n}</div>
+      <div class="sv-icon-wrap">${s.icon}</div>
+      <h3>${s.title}</h3><p>${s.desc}</p>
+      <div class="sv-arrow">→ ${s.tag}</div>
+    </div>
+  </div>`).join('');
+
+document.getElementById('prGrid').innerHTML=PROJECTS.map((p,i)=>`
+  <div class="pr-card reveal" style="transition-delay:${i*.08}s">
+    <div class="pr-card-head" style="background:${p.bg}">
+      <div class="pr-big-num">${p.id}</div>
+      <div class="pr-card-icon">${p.icon}</div>
+    </div>
+    <div class="pr-card-body">
+      <h3>${p.title}</h3><p>${p.desc}</p>
+      <div class="pr-tags">${p.tags.map(t=>`<span class="pr-tag">${t}</span>`).join('')}</div>
+    </div>
+  </div>`).join('');
+
+let tA=0;
+function renderTestis(){
+  document.getElementById('tTrack').innerHTML=TESTIMONIALS.map((t,i)=>`
+    <div class="t-card${i===0?' active-t':''}">
+      <div class="t-stars">${'<span class="t-star">★</span>'.repeat(t.stars)}</div>
+      <p class="t-text">"${t.text}"</p>
+      <div class="t-author">
+        <div class="t-av" style="background:${t.g}">${t.name.split(' ').map(n=>n[0]).join('')}</div>
+        <div><div class="t-name">${t.name}</div><div class="t-role">${t.role}</div></div>
+      </div>
+    </div>`).join('');
+  document.getElementById('tDots').innerHTML=TESTIMONIALS.map((_,i)=>`<div class="t-dot${i===0?' on':''}" data-i="${i}"></div>`).join('');
+}
+renderTestis();
+function goT(i){
+  const cs=document.querySelectorAll('.t-card'),ds=document.querySelectorAll('.t-dot');
+  tA=(i+TESTIMONIALS.length)%TESTIMONIALS.length;
+  document.getElementById('tTrack').style.transform=`translateX(-${tA*((cs[0]?.offsetWidth||400)+24)}px)`;
+  ds.forEach((d,j)=>d.classList.toggle('on',j===tA));
+  cs.forEach((c,j)=>c.classList.toggle('active-t',j===tA));
+}
+document.getElementById('tNext').addEventListener('click',()=>goT(tA+1));
+document.getElementById('tPrev').addEventListener('click',()=>goT(tA-1));
+document.querySelectorAll('.t-dot').forEach(d=>d.addEventListener('click',()=>goT(+d.dataset.i)));
+setInterval(()=>goT(tA+1),5500);
+
+/* ══════════════════════════════════
+   3D BACKGROUND — THREE.JS
+══════════════════════════════════ */
+(function(){
+  const s=document.createElement('script');
+  s.src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';
+  s.onload=init3D;
+  document.head.appendChild(s);
+
+  function init3D(){
+    const canvas=document.getElementById('heroCanvas');
+    const renderer=new THREE.WebGLRenderer({canvas,alpha:true,antialias:true});
+    renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+    renderer.setSize(innerWidth,innerHeight);
+
+    const scene=new THREE.Scene();
+    const camera=new THREE.PerspectiveCamera(60,innerWidth/innerHeight,0.1,300);
+    camera.position.set(0,0,28);
+
+    window.addEventListener('resize',()=>{
+      renderer.setSize(innerWidth,innerHeight);
+      camera.aspect=innerWidth/innerHeight;
+      camera.updateProjectionMatrix();
+    });
+
+    /* ── Mouse tracking ── */
+    let mX=0,mY=0;
+    window.addEventListener('mousemove',e=>{mX=(e.clientX/innerWidth-.5)*2;mY=(e.clientY/innerHeight-.5)*-2});
+
+    /* ── MATERIALS ── */
+    const matGold=new THREE.MeshBasicMaterial({color:0xe8c84a,wireframe:true,transparent:true,opacity:.12});
+    const matPlasma=new THREE.MeshBasicMaterial({color:0x4fc8ff,wireframe:true,transparent:true,opacity:.1});
+    const matWhite=new THREE.MeshBasicMaterial({color:0xffffff,wireframe:true,transparent:true,opacity:.05});
+    const ptMat=new THREE.PointsMaterial({color:0x56d4dd,size:.12,transparent:true,opacity:.7});
+    const ptMatG=new THREE.PointsMaterial({color:0xe8c84a,size:.1,transparent:true,opacity:.5});
+
+    /* ── FLOATING GEOMETRIC SHAPES ── */
+    const shapes=[];
+    const geoms=[
+      new THREE.IcosahedronGeometry(2.5,0),
+      new THREE.OctahedronGeometry(2,0),
+      new THREE.TetrahedronGeometry(1.8,0),
+      new THREE.IcosahedronGeometry(1.2,0),
+      new THREE.OctahedronGeometry(1.5,0),
+      new THREE.TetrahedronGeometry(2.2,0),
+      new THREE.IcosahedronGeometry(1.8,0),
+    ];
+    const mats=[matGold,matPlasma,matWhite,matGold,matPlasma,matWhite,matGold];
+    geoms.forEach((g,i)=>{
+      const mesh=new THREE.Mesh(g,mats[i]);
+      mesh.position.set(
+        (Math.random()-.5)*40,
+        (Math.random()-.5)*20,
+        (Math.random()-.5)*10-5
+      );
+      mesh.rotation.set(Math.random()*Math.PI,Math.random()*Math.PI,0);
+      const spd={rx:(Math.random()-.5)*.004,ry:(Math.random()-.5)*.006,tz:(Math.random()-.5)*.003};
+      shapes.push({mesh,spd});
+      scene.add(mesh);
+    });
+
+    /* ── DNA HELIX ── */
+    function buildHelix(){
+      const pts1=[],pts2=[],cross=[];
+      const N=80,R=1.8,step=0.22,twist=0.16;
+      for(let i=0;i<N;i++){
+        const a=i*twist;const y=i*step-N*step/2;
+        pts1.push(new THREE.Vector3(Math.cos(a)*R,y,Math.sin(a)*R));
+        pts2.push(new THREE.Vector3(Math.cos(a+Math.PI)*R,y,Math.sin(a+Math.PI)*R));
+        if(i%5===0){
+          const v1=pts1[pts1.length-1],v2=pts2[pts2.length-1];
+          const g=new THREE.BufferGeometry().setFromPoints([v1,v2]);
+          const l=new THREE.Line(g,new THREE.LineBasicMaterial({color:0x4fc8ff,transparent:true,opacity:.18}));
+          cross.push(l);scene.add(l);
+        }
+      }
+      const g1=new THREE.BufferGeometry().setFromPoints(pts1);
+      const g2=new THREE.BufferGeometry().setFromPoints(pts2);
+      const l1=new THREE.Line(g1,new THREE.LineBasicMaterial({color:0xe8c84a,transparent:true,opacity:.4}));
+      const l2=new THREE.Line(g2,new THREE.LineBasicMaterial({color:0x4fc8ff,transparent:true,opacity:.4}));
+      const helix=new THREE.Group();
+      helix.add(l1,l2,...cross);
+      helix.position.set(14,0,-4);
+      helix.scale.setScalar(.9);
+      scene.add(helix);
+      return helix;
+    }
+    const helix=buildHelix();
+
+    /* ── LEFT HELIX ── */
+    const helix2=buildHelix();
+    helix2.position.set(-14,0,-4);
+    helix2.rotation.y=Math.PI;
+
+    /* ── PARTICLE FIELD ── */
+    function buildField(count,color,spread){
+      const pos=new Float32Array(count*3);
+      for(let i=0;i<count;i++){pos[i*3]=(Math.random()-.5)*spread;pos[i*3+1]=(Math.random()-.5)*spread*.5;pos[i*3+2]=(Math.random()-.5)*spread*.3}
+      const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(pos,3));
+      const mat=color===0x56d4dd?ptMat:ptMatG;
+      return new THREE.Points(g,mat);
+    }
+    const field=buildField(300,0x56d4dd,60);
+    const fieldG=buildField(120,0xe8c84a,60);
+    scene.add(field,fieldG);
+
+    /* ── NEURAL NETWORK LINES ── */
+    const nodes=[];
+    for(let i=0;i<16;i++){
+      nodes.push(new THREE.Vector3((Math.random()-.5)*36,(Math.random()-.5)*18,(Math.random()-.5)*6-6));
+    }
+    for(let i=0;i<nodes.length;i++){
+      for(let j=i+1;j<nodes.length;j++){
+        if(nodes[i].distanceTo(nodes[j])<9){
+          const g=new THREE.BufferGeometry().setFromPoints([nodes[i],nodes[j]]);
+          const l=new THREE.Line(g,new THREE.LineBasicMaterial({color:0x4fc8ff,transparent:true,opacity:.07}));
+          scene.add(l);
+        }
+      }
+    }
+    // node spheres
+    const nodeMesh=new THREE.SphereGeometry(.12,6,6);
+    nodes.forEach(n=>{
+      const m=new THREE.Mesh(nodeMesh,new THREE.MeshBasicMaterial({color:0x56d4dd,transparent:true,opacity:.6}));
+      m.position.copy(n);scene.add(m);
+    });
+
+    /* ── ANIMATE ── */
+    let t=0;
+    function animate(){
+      requestAnimationFrame(animate);
+      t+=0.008;
+
+      // rotate all shapes
+      shapes.forEach(({mesh,spd})=>{mesh.rotation.x+=spd.rx;mesh.rotation.y+=spd.ry});
+
+      // helix rotation
+      helix.rotation.y=t*.3;
+      helix2.rotation.y=-t*.3+Math.PI;
+
+      // field slow rotation
+      field.rotation.y=t*.04;
+      fieldG.rotation.y=-t*.03;
+
+      // camera parallax with mouse
+      camera.position.x+=(mX*3-camera.position.x)*.03;
+      camera.position.y+=(mY*1.5-camera.position.y)*.03;
+      camera.lookAt(0,0,0);
+
+      renderer.render(scene,camera);
+    }
+    animate();
+  }
+})();
+
+/* ══════════════════════════════════
+   PYTHON CARD TILT
+══════════════════════════════════ */
+(function(){
+  const card=document.getElementById('pyCard');
+  if(!card)return;
+  card.addEventListener('mousemove',e=>{
+    const r=card.getBoundingClientRect();
+    const dx=(e.clientX-r.left-r.width/2)/r.width;
+    const dy=(e.clientY-r.top-r.height/2)/r.height;
+    card.style.transform=`rotateX(${dy*-14}deg) rotateY(${dx*14}deg) translateZ(10px)`;
+    card.style.boxShadow=`${-dx*20}px ${-dy*20}px 60px rgba(79,200,255,0.12), 0 40px 80px rgba(0,0,0,.7)`;
+  });
+  card.addEventListener('mouseleave',()=>{card.style.transform='';card.style.boxShadow='';});
+})();
+
+/* ══════════════════════════════════
+   SERVICE CARD 3D TILT
+══════════════════════════════════ */
+function initSvTilt(){
+  document.querySelectorAll('.sv-card').forEach(card=>{
+    const inner=card.querySelector('.sv-card-inner');
+    card.addEventListener('mousemove',e=>{
+      const r=card.getBoundingClientRect();
+      const dx=(e.clientX-r.left-r.width/2)/r.width;
+      const dy=(e.clientY-r.top-r.height/2)/r.height;
+      inner.style.transform=`rotateX(${dy*-10}deg) rotateY(${dx*10}deg) translateZ(8px)`;
+    });
+    card.addEventListener('mouseleave',()=>{inner.style.transform=''});
+  });
+}
+
+/* ══════════════════════════════════
+   CUSTOM CURSOR
+══════════════════════════════════ */
+const cur=document.getElementById('cur'),ring=document.getElementById('cur-ring');
+let rx=0,ry=0,cx=0,cy=0;
+if(window.matchMedia('(pointer:fine)').matches){
+  document.addEventListener('mousemove',e=>{cx=e.clientX;cy=e.clientY;cur.style.left=cx+'px';cur.style.top=cy+'px'});
+  document.querySelectorAll('.hov,a,button,input,textarea').forEach(el=>{
+    el.addEventListener('mouseenter',()=>document.body.classList.add('hovering'));
+    el.addEventListener('mouseleave',()=>document.body.classList.remove('hovering'));
+  });
+  (function raf(){rx+=(cx-rx)*.1;ry+=(cy-ry)*.1;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(raf)})();
+}else{cur.style.display=ring.style.display='none';document.body.style.cursor='auto'}
+
+/* ══════════════════════════════════
+   SCROLL ANIMATIONS
+══════════════════════════════════ */
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* ══════════════════════════════════
+   MISC
+══════════════════════════════════ */
+// Loader
+let pct=0;
+const ldInt=setInterval(()=>{pct=Math.min(pct+(3+Math.random()*7)|0,100);document.getElementById('ldPct').textContent=pct+'%';if(pct>=100){clearInterval(ldInt);setTimeout(()=>{document.getElementById('loader').classList.add('gone');initSvTilt()},300)}},40);
+
+// Navbar solid on scroll
+window.addEventListener('scroll',()=>{
+  document.getElementById('nav').classList.toggle('solid',scrollY>30);
+  document.getElementById('stBtn').classList.toggle('on',scrollY>400);
+});
+
+// ── SCROLL TOP BUTTON (fixed) ──
+document.getElementById('stBtn').addEventListener('click',function(){
+  window.scrollTo({top:0,behavior:'smooth'});
+});
+
+// ── TYPEWRITER ENGINE ── (layout-stable, no reflow)
+(function(){
+  const PHRASES=[
+    [
+      {t:'Building the',        cls:'tw-plain'},
+      {t:'AI Systems',          cls:'tw-gold'},
+      {t:'That Run',            cls:'tw-plasma'},
+      {t:"Tomorrow's Business", cls:'tw-plain'},
+    ],
+    [
+      {t:'Automating Your',     cls:'tw-plain'},
+      {t:'Business',            cls:'tw-gold'},
+      {t:'With Intelligent',    cls:'tw-plasma'},
+      {t:'AI Agents',           cls:'tw-gold'},
+    ],
+    [
+      {t:'Turning',             cls:'tw-plain'},
+      {t:'Complex AI',          cls:'tw-plasma'},
+      {t:'Into Real',           cls:'tw-plain'},
+      {t:'Business Results',    cls:'tw-gold'},
+    ],
+    [
+      {t:'LLM Fine-Tuning',     cls:'tw-gold'},
+      {t:'&',                   cls:'tw-plain'},
+      {t:'Automation',          cls:'tw-plasma'},
+      {t:'At Scale',            cls:'tw-plain'},
+    ],
+  ];
+
+  const target=document.getElementById('typeTarget');
+  const cursor=document.querySelector('.type-cursor');
+  if(!target)return;
+
+  // Pre-build 4 fixed line divs — they always exist, just update text content
+  // This means NO layout change ever — only text inside fixed containers changes
+  const NUM_LINES=4;
+  const lineEls=[];
+  for(let i=0;i<NUM_LINES;i++){
+    const d=document.createElement('div');
+    d.style.cssText='display:block;overflow:hidden;white-space:nowrap;';
+    d.innerHTML='&nbsp;'; // placeholder keeps line height
+    target.appendChild(d);
+    lineEls.push(d);
+  }
+
+  let phraseIdx=0;
+  let segIdx=0;      // which line/segment we're typing into
+  let charIdx=0;     // how many chars of current segment are shown
+  let isDeleting=false;
+
+  function applyState(phr, upToSeg, upToChar){
+    for(let i=0;i<NUM_LINES;i++){
+      if(i<upToSeg){
+        // completed line
+        lineEls[i].innerHTML=`<span class="${phr[i].cls}">${phr[i].t}</span>`;
+      } else if(i===upToSeg){
+        // currently typing line
+        const partial=phr[i].t.slice(0,upToChar);
+        lineEls[i].innerHTML=partial
+          ? `<span class="${phr[i].cls}">${partial}</span>`
+          : '&nbsp;';
+      } else {
+        // future lines — empty but still occupy space
+        lineEls[i].innerHTML='&nbsp;';
+      }
+    }
+  }
+
+  function clearAll(){
+    lineEls.forEach(l=>l.innerHTML='&nbsp;');
+  }
+
+  function type(){
+    const phr=PHRASES[phraseIdx];
+
+    if(!isDeleting){
+      charIdx++;
+      if(charIdx>phr[segIdx].t.length){
+        charIdx=0;
+        segIdx++;
+        if(segIdx>=phr.length){
+          // Full phrase typed — pause then start deleting from last segment back
+          applyState(phr,phr.length,0);
+          setTimeout(()=>{
+            isDeleting=true;
+            segIdx=phr.length-1;
+            charIdx=phr[segIdx].t.length;
+            type();
+          },2400);
+          return;
+        }
+      }
+      applyState(phr,segIdx,charIdx);
+      setTimeout(type, 55+Math.random()*30);
+
+    } else {
+      charIdx--;
+      if(charIdx<0){
+        // Clear this line
+        lineEls[segIdx].innerHTML='&nbsp;';
+        segIdx--;
+        if(segIdx<0){
+          // All deleted — next phrase
+          isDeleting=false;
+          phraseIdx=(phraseIdx+1)%PHRASES.length;
+          segIdx=0; charIdx=0;
+          clearAll();
+          setTimeout(type,380);
+          return;
+        }
+        charIdx=phr[segIdx].t.length-1;
+      }
+      applyState(phr,segIdx,charIdx);
+      setTimeout(type, 28+Math.random()*18);
+    }
+  }
+
+  setTimeout(type,2400);
+})();
+
+// Counter
+setTimeout(()=>{
+  document.querySelectorAll('[data-count]').forEach(el=>{
+    const t=+el.dataset.count;let c=0;
+    const s=Math.max(1,Math.floor(t/40));
+    const tm=setInterval(()=>{c=Math.min(c+s,t);el.textContent=c+'+';if(c>=t)clearInterval(tm)},40);
+  });
+},2200);
+
+// Mobile nav
+document.getElementById('hamBtn').addEventListener('click',()=>document.getElementById('mobNav').classList.toggle('open'));
+document.querySelectorAll('.mob-close').forEach(a=>a.addEventListener('click',()=>document.getElementById('mobNav').classList.remove('open')));
+
+// Contact form
+document.getElementById('fSub').addEventListener('click',()=>{
+  const n=document.getElementById('cN').value.trim(),e=document.getElementById('cE').value.trim(),m=document.getElementById('cM').value.trim();
+  if(!n||!e||!m){alert('Please fill all fields.');return}
+  document.getElementById('fSub').textContent='Sending...';
+  setTimeout(()=>{document.getElementById('fSub').style.display='none';document.getElementById('fOk').style.display='block'},1200);
+});
+/* ── LIVE INTELLIGENCE CARD ── */
+(function(){
+  // Animate bars when card scrolls into view
+  const card=document.getElementById('liCard');
+  if(!card)return;
+  const io=new IntersectionObserver(entries=>{
+    if(entries[0].isIntersecting){
+      card.querySelectorAll('.li-bar').forEach(bar=>{
+        bar.style.width=bar.dataset.w+'%';
+      });
+      io.disconnect();
+    }
+  },{threshold:.3});
+  io.observe(card);
+
+  // 3D tilt on hover
+  card.addEventListener('mousemove',e=>{
+    const r=card.getBoundingClientRect();
+    const dx=(e.clientX-r.left-r.width/2)/r.width;
+    const dy=(e.clientY-r.top-r.height/2)/r.height;
+    card.style.transform=`rotateX(${dy*-12}deg) rotateY(${dx*12}deg) translateZ(8px)`;
+    card.style.boxShadow=`${-dx*18}px ${-dy*18}px 60px rgba(232,200,74,0.08), 0 40px 80px rgba(0,0,0,.7)`;
+  });
+  card.addEventListener('mouseleave',()=>{card.style.transform='';card.style.boxShadow='';});
+})();
+</script>
 </body>
 </html>

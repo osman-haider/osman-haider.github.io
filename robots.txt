@@ -1,0 +1,13 @@
+# robots.txt — Usman Haider Portfolio
+# https://usmanhaider.dev
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://usmanhaider.dev/sitemap.xml
+
+# Disallow any future admin/private paths
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
