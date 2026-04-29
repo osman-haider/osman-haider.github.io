@@ -28,11 +28,11 @@
   "author":{"@type":"Person","name":"Usman Haider"},
   "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"40","bestRating":"5","worstRating":"1"},
   "review":[
-    {"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5"},"author":{"@type":"Person","name":"James Carter"},"reviewBody":"Usman built our entire AI automation pipeline in 6 weeks. What used to take 3 days now runs in under an hour. ROI was immediate."},
-    {"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5"},"author":{"@type":"Person","name":"Sarah Mitchell"},"reviewBody":"The knowledge graph completely transformed how our team explores data. Non-technical staff now query complex datasets in plain English."},
-    {"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5"},"author":{"@type":"Person","name":"Ahmed Al-Rashid"},"reviewBody":"Customer support costs dropped 40%. Best technical investment we have made as a company."},
-    {"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5"},"author":{"@type":"Person","name":"Emma Schwartz"},"reviewBody":"Whisper fine-tuning for ATC was exceptional. Delivered 20% WER reduction better than our internal benchmark expected."},
-    {"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5"},"author":{"@type":"Person","name":"Liu Wei"},"reviewBody":"The RLHF pipeline is production-quality. Reward modeling and PPO optimization work flawlessly."}
+    {"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5"},"author":{"@type":"Person","name":"E. Bastami"},"reviewBody":"Usman delivered an outstanding Whisper model training service on my custom dataset. Despite time zone differences, his availability and responsiveness were exceptional."},
+    {"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5"},"author":{"@type":"Person","name":"Aliza Basir"},"reviewBody":"Excellent work fine-tuning the Whisper model. Code quality was great, communication was clear, fast, and professional. Everything was delivered on time and exceeded my expectations."},
+    {"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5"},"author":{"@type":"Person","name":"Ahmed Ali"},"reviewBody":"Usman showed exceptional skills and solved the issue in no time. I got very good fine-tuning results. I strongly recommend him to everyone looking for a reliable and fast solution."},
+    {"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5"},"author":{"@type":"Person","name":"Udumbara"},"reviewBody":"I contacted about 30 freelancers but no one could write code to automatically log in to a Cloudflare-protected website. Usman's team succeeded. A very excellent team."},
+    {"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5"},"author":{"@type":"Person","name":"Ayesha S."},"reviewBody":"Great experience! Delivered on time, very professional, and understood the task perfectly. Highly recommend working with him!"}
   ]
 }
 </script>
@@ -144,7 +144,7 @@ footer{background:var(--ink2);border-top:1px solid var(--edge);padding:32px clam
   <div class="stat-item"><div class="stat-n">5.0</div><div class="stat-l">Average Rating</div></div>
   <div class="stat-item"><div class="stat-n">40+</div><div class="stat-l">Orders Completed</div></div>
   <div class="stat-item"><div class="stat-n">100%</div><div class="stat-l">On-Time Delivery</div></div>
-  <div class="stat-item"><div class="stat-n">5+</div><div class="stat-l">Years Experience</div></div>
+  <div class="stat-item"><div class="stat-n">3+</div><div class="stat-l">Years Experience</div></div>
 </div>
 <div class="tgrid" id="tGrid"></div>
 <div class="fv-cta">
@@ -175,12 +175,15 @@ if(window.matchMedia('(pointer:fine)').matches){
   (function raf(){rx+=(cx-rx)*.1;ry+=(cy-ry)*.1;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(raf)})();
 }else{cur.style.display=ring.style.display='none';document.body.style.cursor='auto'}
 const T=[
-  {name:'James Carter',role:'CEO, TechFlow Inc.',text:'Usman built our entire AI automation pipeline in 6 weeks. What used to take 3 days now runs in under an hour. The ROI was immediate and undeniable.',result:'3-day process → under 1 hour runtime',stars:5,g:'linear-gradient(135deg,#e8c84a,#c4973a)',src:'Fiverr'},
-  {name:'Sarah Mitchell',role:'Product Manager, RetailOS',text:'The knowledge graph completely transformed how our team explores data. Non-technical staff query complex datasets in plain English. Remarkable attention to detail.',result:'Non-technical team now self-serves data',stars:5,g:'linear-gradient(135deg,#4fc8ff,#006aff)',src:'Fiverr'},
-  {name:'Ahmed Al-Rashid',role:'Founder, InsureTech Arabia',text:'The insurance automation agent handles our entire onboarding flow. Customer support costs dropped 40%. Best technical investment we\'ve made as a company.',result:'40% reduction in support costs',stars:5,g:'linear-gradient(135deg,#a78bfa,#f472b6)',src:'Fiverr'},
-  {name:'Emma Schwartz',role:'Head of ML, AviationAI',text:'Whisper fine-tuning for ATC was exceptional. Usman understood aviation communication nuances immediately. 20% WER reduction, better than our benchmark.',result:'20% WER reduction on ATC recognition',stars:5,g:'linear-gradient(135deg,#1dbf73,#0d9955)',src:'Fiverr'},
-  {name:'Liu Wei',role:'CTO, DataDriven Co.',text:'The RLHF pipeline is production-quality code. Reward modeling and PPO optimization work flawlessly. His LLM alignment depth is rare and the docs are thorough.',result:'RLHF pipeline in production — exceeds targets',stars:5,g:'linear-gradient(135deg,#e8c84a,#4fc8ff)',src:'Fiverr'},
-  {name:'Marcus Johnson',role:'Director of Ops, LogiFlow',text:'We needed an inventory predictor for complex supply chains. Usman delivered a fully autonomous XGBoost system with AI purchasing agents. Saves 60+ hours/week.',result:'60+ hours/week saved on inventory',stars:5,g:'linear-gradient(135deg,#6366f1,#f472b6)',src:'Direct'},
+  {name:'E. Bastami',role:'AI Fine-Tuning · France',text:'Usman delivered an outstanding Whisper model training service on my custom dataset. He provided all materials including source files and scripts for reproduction. Despite time zone differences, his availability and responsiveness were exceptional throughout the collaboration.',result:'Custom Whisper model delivered with full reproduction scripts',stars:5,g:'linear-gradient(135deg,#1a3a6e,#4fc8ff)',src:'Fiverr'},
+  {name:'Craig Anderson',role:'Data Scraping · United Kingdom',text:'Fantastic work.',result:'Clean, reliable data pipeline delivered on schedule',stars:5,g:'linear-gradient(135deg,#6e1a1a,#c84848)',src:'Fiverr'},
+  {name:'Eden H.',role:'Automations & Agents · Singapore',text:'He is able to deliver the product with efficient and clear instruction.',result:'Automation agent delivered with clear documentation',stars:5,g:'linear-gradient(135deg,#0d4a3a,#1dbf73)',src:'Fiverr'},
+  {name:'Aliza Basir',role:'AI Fine-Tuning · Pakistan',text:'Excellent work fine-tuning the Whisper model. Code quality was great, communication was clear, fast, and very professional throughout. Everything was delivered on time and exceeded my expectations. I would definitely recommend and hire again.',result:'Whisper fine-tuning exceeded expectations, on-time delivery',stars:5,g:'linear-gradient(135deg,#1a4a1a,#2e8b57)',src:'Fiverr'},
+  {name:'Maria A.',role:'AI Fine-Tuning · Pakistan',text:'Great results, very hardworking and committed. Highly recommended.',result:'Consistent results through dedicated hard work',stars:5,g:'linear-gradient(135deg,#4a1a6e,#a78bfa)',src:'Fiverr'},
+  {name:'Ahmed Ali',role:'AI Fine-Tuning · United States',text:'Usman showed exceptional skills and solved the issue in no time. I got very good fine-tuning results after his improvements. I strongly recommend him to everyone looking for a reliable and fast solution.',result:'Fine-tuning issue resolved in record time with exceptional results',stars:5,g:'linear-gradient(135deg,#1a3a7a,#e8c84a)',src:'Fiverr'},
+  {name:'Ayesha S.',role:'AI Fine-Tuning · Pakistan',text:'Great experience! Delivered on time, very professional, and understood the task perfectly. Delivered exactly what I needed, fast and professionally. Highly recommend working with him!',result:'Delivered exactly as requested, fast and professionally',stars:5,g:'linear-gradient(135deg,#6e3a1a,#e8a44a)',src:'Fiverr'},
+  {name:'Udumbara',role:'Data Scraping · Vietnam',text:'I contacted about 30 freelancers but no one could write code to automatically log in to a website protected by Cloudflare. Usman\'s team was able to login successfully. I found them to be a very excellent team.',result:'Solved Cloudflare-protected login automation — others could not',stars:5,g:'linear-gradient(135deg,#7a1a1a,#f5d76e)',src:'Fiverr'},
+  {name:'Noel Brown',role:'Fiverr Client · Denmark',text:'Great work, very hard working. I am pleased.',result:'Delivered quality work with great dedication',stars:5,g:'linear-gradient(135deg,#7a1a2e,#c84860)',src:'Fiverr'},
 ];
 document.getElementById('tGrid').innerHTML=T.map((t,i)=>`
   <div class="tcard reveal" style="transition-delay:${(i%3)*.1}s">

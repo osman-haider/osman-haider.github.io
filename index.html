@@ -113,9 +113,9 @@
     },
     {
       "@type": "Review",
-      "reviewBody": "Usman built our entire AI automation pipeline in 6 weeks. What used to take 3 days now runs in under an hour. The ROI was immediate and undeniable.",
+      "reviewBody": "Usman showed exceptional skills and solved the issue in no time. I got very good fine-tuning results after his improvements. I strongly recommend him to everyone looking for a reliable and fast solution.",
       "reviewRating": {"@type": "Rating","ratingValue": "5","bestRating": "5"},
-      "author": {"@type": "Person","name": "James Carter"},
+      "author": {"@type": "Person","name": "Ahmed Ali"},
       "itemReviewed": {"@type": "Person","name": "Usman Haider"}
     }
   ]
@@ -780,40 +780,55 @@ h2.s-title{
   font-size:.7rem;font-weight:700;color:var(--plasma);
 }
 
-/* ── TESTIMONIALS ─────────────────────────────────────────── */
+/* ── TESTIMONIALS 3D COVERFLOW ─────────────────────────── */
 .testi-stage{
-  position:relative;margin-top:60px;overflow:hidden;
+  position:relative;margin-top:60px;
+  height:340px;
+  perspective:1100px;
+  perspective-origin:50% 50%;
+  overflow:visible;
 }
-.testi-track{display:flex;gap:24px;transition:transform .7s cubic-bezier(.23,1,.32,1)}
+.t3d-ring{position:relative;width:100%;height:100%;transform-style:preserve-3d}
 .t-card{
-  min-width:400px;flex-shrink:0;
-  background:var(--glass2);border:1px solid var(--edge);
-  border-radius:20px;padding:36px;
-  position:relative;overflow:hidden;
-  transition:border-color .3s,box-shadow .3s,transform .3s;
+  position:absolute;
+  width:520px;
+  left:calc(50% - 260px);
+  top:0;
+  background:var(--glass2);
+  border:1px solid var(--edge);
+  border-radius:20px;padding:32px 36px;
+  overflow:hidden;
+  backface-visibility:hidden;
+  transition:transform .65s cubic-bezier(.23,1,.32,1),
+             opacity .65s cubic-bezier(.23,1,.32,1),
+             border-color .35s,box-shadow .35s;
+  will-change:transform,opacity;
 }
-.t-card.active-t{
-  border-color:rgba(232,200,74,0.3);
-  box-shadow:0 0 60px rgba(232,200,74,0.06);
+.t-card.t-active{
+  border-color:rgba(232,200,74,0.35);
+  box-shadow:0 0 60px rgba(232,200,74,0.08),0 24px 60px rgba(0,0,0,.45);
 }
 .t-card::before{
-  content:'❝';position:absolute;top:16px;right:20px;
+  content:'❝';position:absolute;top:14px;right:20px;
   font-size:5rem;color:var(--gold);opacity:.06;line-height:1;
-  font-family:serif;
+  font-family:serif;pointer-events:none;
 }
-.t-stars{display:flex;gap:4px;margin-bottom:16px}
+.t-stars{display:flex;gap:4px;margin-bottom:14px}
 .t-star{color:var(--gold);font-size:1rem}
-.t-text{font-size:.92rem;color:var(--silver);line-height:1.8;font-style:italic;margin-bottom:24px}
+.t-text{
+  font-size:.92rem;color:var(--silver);line-height:1.8;
+  font-style:italic;margin-bottom:22px;
+  word-wrap:break-word;white-space:normal;overflow-wrap:break-word;
+}
 .t-author{display:flex;align-items:center;gap:12px}
 .t-av{
-  width:46px;height:46px;border-radius:50%;
+  width:46px;height:46px;border-radius:50%;flex-shrink:0;
   display:flex;align-items:center;justify-content:center;
-  font-family:var(--fd);font-weight:700;font-size:1.05rem;color:var(--ink);
-  flex-shrink:0;
+  font-family:var(--fd);font-weight:700;font-size:1rem;color:var(--ink);
 }
 .t-name{font-weight:700;font-size:.9rem;color:var(--ice);margin-bottom:2px}
 .t-role{font-size:.78rem;color:var(--silver2)}
-.t-ctrl{display:flex;align-items:center;gap:12px;margin-top:28px}
+.t-ctrl{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:36px}
 .t-btn{
   width:44px;height:44px;border-radius:50%;
   background:var(--glass2);border:1px solid var(--edge);
@@ -1076,8 +1091,12 @@ nav{
   .about-photo-frame{max-height:320px;aspect-ratio:auto}
   h2.s-title{font-size:clamp(1.6rem,5vw,2.4rem);letter-spacing:-1px}
 
-  /* Testimonials */
-  .t-card{min-width:calc(100vw - 64px)}
+  /* Testimonials 3D — flat on mobile */
+  .testi-stage{height:auto;perspective:none;min-height:260px}
+  .t3d-ring{height:260px}
+  .t-card{width:calc(100vw - 64px);left:32px;transition:opacity .5s,transform .5s}
+  .t-card:not(.t-active){transform:translateX(0) rotateY(0deg) translateZ(0px) scale(1) !important;opacity:0 !important;pointer-events:none !important}
+  .t-card.t-active{transform:translateX(0) !important;opacity:1 !important}
 
   /* Fiverr band */
   .fv-band-inner{flex-direction:column;align-items:flex-start;gap:16px;padding:24px 0}
@@ -1583,12 +1602,12 @@ nav{
   <h2 class="s-title reveal reveal-d1">What Clients Say</h2>
   <p class="s-sub reveal reveal-d2">40+ completed projects. Every client a story of results.</p>
   <div class="testi-stage reveal">
-    <div class="testi-track" id="tTrack"></div>
-    <div class="t-ctrl">
-      <button class="t-btn hov" id="tPrev">←</button>
-      <div class="t-dots" id="tDots"></div>
-      <button class="t-btn hov" id="tNext">→</button>
-    </div>
+    <div class="t3d-ring" id="tRing"></div>
+  </div>
+  <div class="t-ctrl reveal">
+    <button class="t-btn hov" id="tPrev">←</button>
+    <div class="t-dots" id="tDots"></div>
+    <button class="t-btn hov" id="tNext">→</button>
   </div>
   <div class="view-all-row reveal">
     <a href="testimonials" class="btn-viewall hov">Read All Reviews <span class="arr">→</span></a>
@@ -1747,11 +1766,15 @@ const PROJECTS=[
   {id:'04',icon:'🎙️',title:'Speak AI Platform',desc:'Complete agentic SaaS for AI voice agents: admin panel, ElevenLabs TTS, Twilio calling, lead gen, Stripe billing. White-label ready.',tags:['ElevenLabs','Twilio','Stripe'],bg:'rgba(79,200,255,.07)'},
 ];
 const TESTIMONIALS=[
-  {name:'James Carter',role:'CEO, TechFlow Inc.',text:'Usman built our entire AI automation pipeline in 6 weeks. What used to take 3 days now runs in under an hour. ROI was immediate.',stars:5,g:'linear-gradient(135deg,#e8c84a,#c4973a)'},
-  {name:'Sarah Mitchell',role:'Product Manager, RetailOS',text:'The knowledge graph completely transformed how our team explores data. Non-technical staff now query complex datasets in plain English.',stars:5,g:'linear-gradient(135deg,#4fc8ff,#006aff)'},
-  {name:'Ahmed Al-Rashid',role:'Founder, InsureTech Arabia',text:'The insurance automation agent handles our entire onboarding flow. Customer support costs dropped 40%. Best investment we\'ve made.',stars:5,g:'linear-gradient(135deg,#a78bfa,#f472b6)'},
-  {name:'Emma Schwartz',role:'Head of ML, AviationAI',text:'Whisper fine-tuning for ATC was exceptional. Delivered 20% WER reduction — better than our internal benchmark expected.',stars:5,g:'linear-gradient(135deg,#1dbf73,#0d9955)'},
-  {name:'Liu Wei',role:'CTO, DataDriven Co.',text:'The RLHF pipeline is production-quality. Reward modeling and PPO optimization work flawlessly. His LLM alignment depth is rare.',stars:5,g:'linear-gradient(135deg,#e8c84a,#4fc8ff)'},
+  {name:'E. Bastami',role:'AI Fine-Tuning · France',text:'Usman delivered an outstanding Whisper model training service on my custom dataset. He provided all materials including source files and scripts for reproduction. Despite time zone differences, his availability and responsiveness were exceptional throughout the collaboration.',stars:5,g:'linear-gradient(135deg,#1a3a6e,#4fc8ff)'},
+  {name:'Craig Anderson',role:'Data Scraping · United Kingdom',text:'Fantastic work.',stars:5,g:'linear-gradient(135deg,#6e1a1a,#c84848)'},
+  {name:'Eden H.',role:'Automations & Agents · Singapore',text:'He is able to deliver the product with efficient and clear instruction.',stars:5,g:'linear-gradient(135deg,#0d4a3a,#1dbf73)'},
+  {name:'Aliza Basir',role:'AI Fine-Tuning · Pakistan',text:'Excellent work fine-tuning the Whisper model. Code quality was great, communication was clear, fast, and very professional throughout. Everything was delivered on time and exceeded my expectations. I would definitely recommend and hire again.',stars:5,g:'linear-gradient(135deg,#1a4a1a,#2e8b57)'},
+  {name:'Maria A.',role:'AI Fine-Tuning · Pakistan',text:'Great results, very hardworking and committed. Highly recommended.',stars:5,g:'linear-gradient(135deg,#4a1a6e,#a78bfa)'},
+  {name:'Ahmed Ali',role:'AI Fine-Tuning · United States',text:'Usman showed exceptional skills and solved the issue in no time. I got very good fine-tuning results after his improvements. I strongly recommend him to everyone looking for a reliable and fast solution.',stars:5,g:'linear-gradient(135deg,#1a3a7a,#e8c84a)'},
+  {name:'Ayesha S.',role:'AI Fine-Tuning · Pakistan',text:'Great experience! Delivered on time, very professional, and understood the task perfectly. Delivered exactly what I needed, fast and professionally. Highly recommend working with him!',stars:5,g:'linear-gradient(135deg,#6e3a1a,#e8a44a)'},
+  {name:'Udumbara',role:'Data Scraping · Vietnam',text:'I contacted about 30 freelancers but no one could write code to automatically log in to a website protected by Cloudflare. Usman\'s team was able to login successfully. I found them to be a very excellent team.',stars:5,g:'linear-gradient(135deg,#7a1a1a,#f5d76e)'},
+  {name:'Noel Brown',role:'Fiverr Client · Denmark',text:'Great work, very hard working. I am pleased.',stars:5,g:'linear-gradient(135deg,#7a1a2e,#c84860)'},
 ];
 
 /* ══════════════════════════════════
@@ -1779,10 +1802,14 @@ document.getElementById('prGrid').innerHTML=PROJECTS.map((p,i)=>`
     </div>
   </div>`).join('');
 
+/* 3D coverflow — pick 5 best reviews for the homepage */
+const TESTI5=[TESTIMONIALS[0],TESTIMONIALS[3],TESTIMONIALS[5],TESTIMONIALS[7],TESTIMONIALS[2]];
 let tA=0;
-function renderTestis(){
-  document.getElementById('tTrack').innerHTML=TESTIMONIALS.map((t,i)=>`
-    <div class="t-card${i===0?' active-t':''}">
+const tN=TESTI5.length;
+
+(function buildTesti(){
+  document.getElementById('tRing').innerHTML=TESTI5.map((t,i)=>`
+    <div class="t-card" data-idx="${i}">
       <div class="t-stars">${'<span class="t-star">★</span>'.repeat(t.stars)}</div>
       <p class="t-text">"${t.text}"</p>
       <div class="t-author">
@@ -1790,19 +1817,35 @@ function renderTestis(){
         <div><div class="t-name">${t.name}</div><div class="t-role">${t.role}</div></div>
       </div>
     </div>`).join('');
-  document.getElementById('tDots').innerHTML=TESTIMONIALS.map((_,i)=>`<div class="t-dot${i===0?' on':''}" data-i="${i}"></div>`).join('');
+  document.getElementById('tDots').innerHTML=TESTI5.map((_,i)=>
+    `<div class="t-dot${i===0?' on':''}" data-i="${i}"></div>`).join('');
+  positionT(0);
+  document.querySelectorAll('.t-dot').forEach(d=>d.addEventListener('click',()=>goT(+d.dataset.i)));
+})();
+
+function positionT(activeIdx){
+  const cards=document.querySelectorAll('#tRing .t-card');
+  const dots=document.querySelectorAll('.t-dot');
+  cards.forEach((card,i)=>{
+    let off=((i-activeIdx)%tN+tN)%tN;
+    if(off>tN/2)off-=tN;
+    const abs=Math.abs(off),sign=off<0?-1:off>0?1:0;
+    const tx=sign*(abs===1?340:abs===2?540:0);
+    const ry=sign*(abs===1?52:abs===2?82:0);
+    const tz=abs===0?0:abs===1?-140:-290;
+    const sc=abs===0?1:abs===1?.82:.66;
+    const op=abs===0?1:abs===1?.55:.15;
+    card.style.transform=`translateX(${tx}px) rotateY(${ry}deg) translateZ(${tz}px) scale(${sc})`;
+    card.style.opacity=op;
+    card.style.zIndex=10-abs*3;
+    card.classList.toggle('t-active',abs===0);
+  });
+  dots.forEach((d,j)=>d.classList.toggle('on',j===activeIdx));
 }
-renderTestis();
-function goT(i){
-  const cs=document.querySelectorAll('.t-card'),ds=document.querySelectorAll('.t-dot');
-  tA=(i+TESTIMONIALS.length)%TESTIMONIALS.length;
-  document.getElementById('tTrack').style.transform=`translateX(-${tA*((cs[0]?.offsetWidth||400)+24)}px)`;
-  ds.forEach((d,j)=>d.classList.toggle('on',j===tA));
-  cs.forEach((c,j)=>c.classList.toggle('active-t',j===tA));
-}
+
+function goT(i){tA=((i%tN)+tN)%tN;positionT(tA)}
 document.getElementById('tNext').addEventListener('click',()=>goT(tA+1));
 document.getElementById('tPrev').addEventListener('click',()=>goT(tA-1));
-document.querySelectorAll('.t-dot').forEach(d=>d.addEventListener('click',()=>goT(+d.dataset.i)));
 setInterval(()=>goT(tA+1),5500);
 
 /* ══════════════════════════════════
