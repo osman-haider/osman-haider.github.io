@@ -1091,12 +1091,38 @@ nav{
   .about-photo-frame{max-height:320px;aspect-ratio:auto}
   h2.s-title{font-size:clamp(1.6rem,5vw,2.4rem);letter-spacing:-1px}
 
-  /* Testimonials 3D — flat on mobile */
-  .testi-stage{height:auto;perspective:none;min-height:260px}
-  .t3d-ring{height:260px}
-  .t-card{width:calc(100vw - 64px);left:32px;transition:opacity .5s,transform .5s}
-  .t-card:not(.t-active){transform:translateX(0) rotateY(0deg) translateZ(0px) scale(1) !important;opacity:0 !important;pointer-events:none !important}
-  .t-card.t-active{transform:translateX(0) !important;opacity:1 !important}
+  /* Pricing — solid background, single column */
+  .pricing-card{
+    background:rgba(5,10,22,0.94) !important;
+    border-color:rgba(255,255,255,0.1) !important;
+    backdrop-filter:blur(20px);
+  }
+  .pricing-card.premium{
+    background:linear-gradient(145deg,rgba(232,200,74,0.08),rgba(5,10,22,0.94)) !important;
+    border-color:rgba(232,200,74,0.28) !important;
+  }
+  .best-value-ribbon{display:none}
+
+  /* Testimonials — flat single card, solid background, auto height */
+  .testi-stage{height:auto;min-height:0;perspective:none;overflow:visible}
+  .t3d-ring{height:auto;position:relative}
+  .t-card{
+    position:relative !important;
+    width:100% !important;
+    left:auto !important;
+    top:auto !important;
+    display:none;
+    transform:none !important;
+    opacity:0 !important;
+    background:rgba(5,10,22,0.94) !important;
+    border-color:rgba(255,255,255,0.1) !important;
+    backdrop-filter:blur(20px);
+  }
+  .t-card.t-active{
+    display:block !important;
+    opacity:1 !important;
+    border-color:rgba(232,200,74,0.3) !important;
+  }
 
   /* Fiverr band */
   .fv-band-inner{flex-direction:column;align-items:flex-start;gap:16px;padding:24px 0}
@@ -1144,8 +1170,8 @@ nav{
   /* Cards */
   .sv-card-inner{padding:24px}
   .pr-card-body{padding:18px}
-  .pricing-card{padding:28px 24px}
-  .t-card{padding:24px;min-width:calc(100vw - 32px)}
+  .pricing-card{padding:28px 20px}
+  .t-card{padding:24px}
 
   /* LI card */
   .li-card{padding:24px 20px 20px}
